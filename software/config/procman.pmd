@@ -4,6 +4,11 @@ cmd "0-roscore" {
     host = "localhost";
 }
 
+cmd "0.5-frames" {
+    exec = "roslaunch me212bot frames.launch";
+    host = "localhost";
+}
+
 cmd "1-robot" {
     exec = "roslaunch me212bot me212bot.launch";
     host = "localhost";
@@ -31,6 +36,27 @@ cmd "2-rviz" {
     host = "localhost";
 }
 
+cmd "2.1-kinect" {
+    exec = "roslaunch freenect_launch freenect.launch depth_registration:=true";
+    host = "localhost";
+}
+
+cmd "2.2-pr_apriltag" {
+    exec = "roslaunch pr_apriltags pr_apriltags.launch";
+    host = "localhost";
+}
+
+cmd "2.3-robot" {
+    exec = "rosrun me212bot me212bot_node.py";
+    host = "localhost";
+}
+
+cmd "2.4-navigation" {
+    exec = "rosrun me212bot apriltag_navi.py";
+    host = "localhost";
+}
+
+
 cmd "3-tf" {
     exec = "rosrun tf static_transform_publisher 0 0 0 0 0 0 /map /robot_base 100";
     host = "localhost";
@@ -57,6 +83,16 @@ cmd "4.4-planning-rrt" {
 }
 
 
+script "run-navigate" {
+    start cmd "0-roscore";
+    wait ms 1000;
+    start cmd "1-frames";
+    wait ms 500;
+    start cmd "2-rviz";
+    start cmd "2.1-kinect";
+    start cmd "2.2-pr_apriltag";
+    start cmd "2.3-robot";
+}
 
 script "run-virtual" {
     start cmd "0-roscore";
