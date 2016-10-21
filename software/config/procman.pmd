@@ -41,13 +41,8 @@ cmd "2.1-kinect" {
     host = "localhost";
 }
 
-cmd "2.2-pr_apriltag" {
-    exec = "roslaunch pr_apriltags pr_apriltags.launch";
-    host = "localhost";
-}
-
-cmd "2.3-robot" {
-    exec = "rosrun me212bot me212bot_node.py";
+cmd "2.2-apriltag" {
+    exec = "roslaunch apriltags apriltags.launch";
     host = "localhost";
 }
 
@@ -90,7 +85,7 @@ script "run-navigate" {
     wait ms 500;
     start cmd "2-rviz";
     start cmd "2.1-kinect";
-    start cmd "2.2-pr_apriltag";
+    start cmd "2.2-apriltag";
     start cmd "2.3-robot";
 }
 

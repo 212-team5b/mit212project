@@ -1,0 +1,8 @@
+prefix=/home/robot/mit212project/catkin_ws/devel
+
+Name: me212cv
+Description: Description of me212cv
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/robot/mit212project/catkin_ws/devel/lib 
+Requires: 

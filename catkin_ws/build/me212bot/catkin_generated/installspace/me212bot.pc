@@ -1,0 +1,8 @@
+prefix=/home/robot/mit212project/catkin_ws/install
+
+Name: me212bot
+Description: Description of me212bot
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/robot/mit212project/catkin_ws/install/lib 
+Requires: 
