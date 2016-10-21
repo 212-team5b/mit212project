@@ -5,12 +5,12 @@ cmd "0-roscore" {
 }
 
 cmd "0.5-frames" {
-    exec = "roslaunch me212bot frames.launch";
+    exec = "roslaunch me212base frames.launch";
     host = "localhost";
 }
 
 cmd "1-robot" {
-    exec = "roslaunch me212bot me212bot.launch";
+    exec = "roslaunch me212base me212base.launch";
     host = "localhost";
 }
 
@@ -32,7 +32,7 @@ cmd "1-robot-arm-real-joint-state-publisher" {
 }
 
 cmd "2-rviz" {
-    exec = "roslaunch me212bot viz.launch";
+    exec = "roslaunch me212base viz.launch";
     host = "localhost";
 }
 

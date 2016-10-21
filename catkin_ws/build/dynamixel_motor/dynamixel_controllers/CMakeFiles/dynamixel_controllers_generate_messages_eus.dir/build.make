@@ -43,88 +43,88 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robot/mit212project/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/luke/catkin_ws/mit212project/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robot/mit212project/catkin_ws/build
+CMAKE_BINARY_DIR = /home/luke/catkin_ws/mit212project/catkin_ws/build
 
 # Utility rule file for dynamixel_controllers_generate_messages_eus.
 
 # Include the progress variables for this target.
 include dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/progress.make
 
-dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus: /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/StopController.l
-dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus: /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetSpeed.l
-dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus: /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetComplianceSlope.l
-dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus: /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/RestartController.l
-dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus: /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/TorqueEnable.l
-dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus: /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetComplianceMargin.l
-dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus: /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/StartController.l
-dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus: /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetCompliancePunch.l
-dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus: /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetTorqueLimit.l
-dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus: /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/manifest.l
+dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus: /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetSpeed.l
+dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus: /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetComplianceSlope.l
+dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus: /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetCompliancePunch.l
+dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus: /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetComplianceMargin.l
+dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus: /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/TorqueEnable.l
+dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus: /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetTorqueLimit.l
+dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus: /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/RestartController.l
+dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus: /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/StartController.l
+dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus: /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/StopController.l
+dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus: /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/manifest.l
 
 
-/home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/StopController.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/StopController.l: /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from dynamixel_controllers/StopController.srv"
-	cd /home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv -p dynamixel_controllers -o /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv
+/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetSpeed.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetSpeed.l: /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from dynamixel_controllers/SetSpeed.srv"
+	cd /home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv -p dynamixel_controllers -o /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv
 
-/home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetSpeed.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetSpeed.l: /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from dynamixel_controllers/SetSpeed.srv"
-	cd /home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv -p dynamixel_controllers -o /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv
+/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetComplianceSlope.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetComplianceSlope.l: /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from dynamixel_controllers/SetComplianceSlope.srv"
+	cd /home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv -p dynamixel_controllers -o /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv
 
-/home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetComplianceSlope.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetComplianceSlope.l: /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from dynamixel_controllers/SetComplianceSlope.srv"
-	cd /home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv -p dynamixel_controllers -o /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv
+/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetCompliancePunch.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetCompliancePunch.l: /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from dynamixel_controllers/SetCompliancePunch.srv"
+	cd /home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv -p dynamixel_controllers -o /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv
 
-/home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/RestartController.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/RestartController.l: /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from dynamixel_controllers/RestartController.srv"
-	cd /home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv -p dynamixel_controllers -o /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv
+/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetComplianceMargin.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetComplianceMargin.l: /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from dynamixel_controllers/SetComplianceMargin.srv"
+	cd /home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv -p dynamixel_controllers -o /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv
 
-/home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/TorqueEnable.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/TorqueEnable.l: /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp code from dynamixel_controllers/TorqueEnable.srv"
-	cd /home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv -p dynamixel_controllers -o /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv
+/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/TorqueEnable.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/TorqueEnable.l: /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp code from dynamixel_controllers/TorqueEnable.srv"
+	cd /home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv -p dynamixel_controllers -o /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv
 
-/home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetComplianceMargin.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetComplianceMargin.l: /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating EusLisp code from dynamixel_controllers/SetComplianceMargin.srv"
-	cd /home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv -p dynamixel_controllers -o /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv
+/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetTorqueLimit.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetTorqueLimit.l: /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating EusLisp code from dynamixel_controllers/SetTorqueLimit.srv"
+	cd /home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv -p dynamixel_controllers -o /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv
 
-/home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/StartController.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/StartController.l: /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating EusLisp code from dynamixel_controllers/StartController.srv"
-	cd /home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv -p dynamixel_controllers -o /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv
+/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/RestartController.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/RestartController.l: /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating EusLisp code from dynamixel_controllers/RestartController.srv"
+	cd /home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv -p dynamixel_controllers -o /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv
 
-/home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetCompliancePunch.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetCompliancePunch.l: /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating EusLisp code from dynamixel_controllers/SetCompliancePunch.srv"
-	cd /home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv -p dynamixel_controllers -o /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv
+/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/StartController.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/StartController.l: /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating EusLisp code from dynamixel_controllers/StartController.srv"
+	cd /home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv -p dynamixel_controllers -o /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv
 
-/home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetTorqueLimit.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetTorqueLimit.l: /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating EusLisp code from dynamixel_controllers/SetTorqueLimit.srv"
-	cd /home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv -p dynamixel_controllers -o /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv
+/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/StopController.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/StopController.l: /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating EusLisp code from dynamixel_controllers/StopController.srv"
+	cd /home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv -p dynamixel_controllers -o /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv
 
-/home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating EusLisp manifest code for dynamixel_controllers"
-	cd /home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers dynamixel_controllers
+/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating EusLisp manifest code for dynamixel_controllers"
+	cd /home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers dynamixel_controllers
 
 dynamixel_controllers_generate_messages_eus: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus
-dynamixel_controllers_generate_messages_eus: /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/StopController.l
-dynamixel_controllers_generate_messages_eus: /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetSpeed.l
-dynamixel_controllers_generate_messages_eus: /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetComplianceSlope.l
-dynamixel_controllers_generate_messages_eus: /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/RestartController.l
-dynamixel_controllers_generate_messages_eus: /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/TorqueEnable.l
-dynamixel_controllers_generate_messages_eus: /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetComplianceMargin.l
-dynamixel_controllers_generate_messages_eus: /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/StartController.l
-dynamixel_controllers_generate_messages_eus: /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetCompliancePunch.l
-dynamixel_controllers_generate_messages_eus: /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetTorqueLimit.l
-dynamixel_controllers_generate_messages_eus: /home/robot/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/manifest.l
+dynamixel_controllers_generate_messages_eus: /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetSpeed.l
+dynamixel_controllers_generate_messages_eus: /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetComplianceSlope.l
+dynamixel_controllers_generate_messages_eus: /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetCompliancePunch.l
+dynamixel_controllers_generate_messages_eus: /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetComplianceMargin.l
+dynamixel_controllers_generate_messages_eus: /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/TorqueEnable.l
+dynamixel_controllers_generate_messages_eus: /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/SetTorqueLimit.l
+dynamixel_controllers_generate_messages_eus: /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/RestartController.l
+dynamixel_controllers_generate_messages_eus: /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/StartController.l
+dynamixel_controllers_generate_messages_eus: /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/srv/StopController.l
+dynamixel_controllers_generate_messages_eus: /home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/dynamixel_controllers/manifest.l
 dynamixel_controllers_generate_messages_eus: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/build.make
 
 .PHONY : dynamixel_controllers_generate_messages_eus
@@ -135,10 +135,10 @@ dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/build
 
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/clean:
-	cd /home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers && $(CMAKE_COMMAND) -P CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers && $(CMAKE_COMMAND) -P CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/clean
 
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/depend:
-	cd /home/robot/mit212project/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robot/mit212project/catkin_ws/src /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers /home/robot/mit212project/catkin_ws/build /home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers /home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luke/catkin_ws/mit212project/catkin_ws/src /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers /home/luke/catkin_ws/mit212project/catkin_ws/build /home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers /home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/depend
 

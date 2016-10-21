@@ -1,8 +1,8 @@
-# Install script for directory: /home/robot/mit212project/catkin_ws/src/apriltags
+# Install script for directory: /home/luke/catkin_ws/mit212project/catkin_ws/src/apriltags
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/robot/mit212project/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/luke/catkin_ws/mit212project/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,56 +34,56 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/apriltags/msg" TYPE FILE FILES
-    "/home/robot/mit212project/catkin_ws/src/apriltags/msg/AprilTagDetection.msg"
-    "/home/robot/mit212project/catkin_ws/src/apriltags/msg/AprilTagDetections.msg"
+    "/home/luke/catkin_ws/mit212project/catkin_ws/src/apriltags/msg/AprilTagDetection.msg"
+    "/home/luke/catkin_ws/mit212project/catkin_ws/src/apriltags/msg/AprilTagDetections.msg"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/apriltags/cmake" TYPE FILE FILES "/home/robot/mit212project/catkin_ws/build/apriltags/catkin_generated/installspace/apriltags-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/apriltags/cmake" TYPE FILE FILES "/home/luke/catkin_ws/mit212project/catkin_ws/build/apriltags/catkin_generated/installspace/apriltags-msg-paths.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/robot/mit212project/catkin_ws/devel/include/apriltags")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/luke/catkin_ws/mit212project/catkin_ws/devel/include/apriltags")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/robot/mit212project/catkin_ws/devel/share/roseus/ros/apriltags")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/apriltags")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/robot/mit212project/catkin_ws/devel/share/common-lisp/ros/apriltags")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/common-lisp/ros/apriltags")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/robot/mit212project/catkin_ws/devel/share/gennodejs/ros/apriltags")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/gennodejs/ros/apriltags")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags")
+  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/robot/mit212project/catkin_ws/build/apriltags/catkin_generated/installspace/apriltags.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/luke/catkin_ws/mit212project/catkin_ws/build/apriltags/catkin_generated/installspace/apriltags.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/apriltags/cmake" TYPE FILE FILES "/home/robot/mit212project/catkin_ws/build/apriltags/catkin_generated/installspace/apriltags-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/apriltags/cmake" TYPE FILE FILES "/home/luke/catkin_ws/mit212project/catkin_ws/build/apriltags/catkin_generated/installspace/apriltags-msg-extras.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/apriltags/cmake" TYPE FILE FILES
-    "/home/robot/mit212project/catkin_ws/build/apriltags/catkin_generated/installspace/apriltagsConfig.cmake"
-    "/home/robot/mit212project/catkin_ws/build/apriltags/catkin_generated/installspace/apriltagsConfig-version.cmake"
+    "/home/luke/catkin_ws/mit212project/catkin_ws/build/apriltags/catkin_generated/installspace/apriltagsConfig.cmake"
+    "/home/luke/catkin_ws/mit212project/catkin_ws/build/apriltags/catkin_generated/installspace/apriltagsConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/apriltags" TYPE FILE FILES "/home/robot/mit212project/catkin_ws/src/apriltags/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/apriltags" TYPE FILE FILES "/home/luke/catkin_ws/mit212project/catkin_ws/src/apriltags/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -93,7 +93,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/apriltags/apriltags"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/apriltags" TYPE EXECUTABLE FILES "/home/robot/mit212project/catkin_ws/devel/lib/apriltags/apriltags")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/apriltags" TYPE EXECUTABLE FILES "/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/apriltags/apriltags")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/apriltags/apriltags" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/apriltags/apriltags")
     file(RPATH_CHANGE

@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/robot/mit212project/catkin_ws/devel/setup.sh
+    local-name: /home/luke/catkin_ws/mit212project/catkin_ws/devel/setup.sh

@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "me212base"
-PROJECT_SPACE_DIR = "/home/robot/mit212project/catkin_ws/devel"
+PROJECT_SPACE_DIR = "/home/luke/catkin_ws/mit212project/catkin_ws/devel"
 PROJECT_VERSION = "0.0.0"

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/apriltags.dir/src/apriltags.cpp.o"
-  "/home/robot/mit212project/catkin_ws/devel/lib/apriltags/apriltags.pdb"
-  "/home/robot/mit212project/catkin_ws/devel/lib/apriltags/apriltags"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/apriltags/apriltags.pdb"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/apriltags/apriltags"
 )
 
 # Per-language clean rules from dependency scanning.

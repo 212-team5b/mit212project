@@ -1,8 +1,8 @@
-# Install script for directory: /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_driver
+# Install script for directory: /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_driver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/robot/mit212project/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/luke/catkin_ws/mit212project/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,30 +33,30 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  include("/home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_driver/catkin_generated/safe_execute_install.cmake")
+  include("/home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_driver/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_driver/catkin_generated/installspace/dynamixel_driver.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_driver/catkin_generated/installspace/dynamixel_driver.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_driver/cmake" TYPE FILE FILES
-    "/home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_driver/catkin_generated/installspace/dynamixel_driverConfig.cmake"
-    "/home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_driver/catkin_generated/installspace/dynamixel_driverConfig-version.cmake"
+    "/home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_driver/catkin_generated/installspace/dynamixel_driverConfig.cmake"
+    "/home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_driver/catkin_generated/installspace/dynamixel_driverConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_driver" TYPE FILE FILES "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_driver/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_driver" TYPE FILE FILES "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_driver/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/dynamixel_driver" TYPE PROGRAM FILES
-    "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_driver/scripts/change_id.py"
-    "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_driver/scripts/info_dump.py"
-    "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_driver/scripts/set_servo_config.py"
-    "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_driver/scripts/set_torque.py"
+    "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_driver/scripts/change_id.py"
+    "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_driver/scripts/info_dump.py"
+    "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_driver/scripts/set_servo_config.py"
+    "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_driver/scripts/set_torque.py"
     )
 endif()
 

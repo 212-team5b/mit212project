@@ -1,8 +1,8 @@
-prefix=/home/robot/mit212project/catkin_ws/devel
+prefix=/home/luke/catkin_ws/mit212project/catkin_ws/devel
 
 Name: dynamixel_driver
 Description: Description of dynamixel_driver
 Version: 0.4.0
 Cflags: 
-Libs: -L/home/robot/mit212project/catkin_ws/devel/lib 
+Libs: -L/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib 
 Requires: rospy diagnostic_msgs
