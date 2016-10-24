@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/robot/mit212project/catkin_ws/devel/include/apriltags/AprilTagDetection.h
+/home/luke/catkin_ws/mit212project/catkin_ws/devel/include/apriltags/AprilTagDetection.h
 string
 -
 vector
@@ -28,7 +28,7 @@ geometry_msgs/Point32.h
 geometry_msgs/Pose.h
 -
 
-/home/robot/mit212project/catkin_ws/devel/include/apriltags/AprilTagDetections.h
+/home/luke/catkin_ws/mit212project/catkin_ws/devel/include/apriltags/AprilTagDetections.h
 string
 -
 vector
@@ -48,9 +48,9 @@ std_msgs/Header.h
 apriltags/AprilTagDetection.h
 -
 
-/home/robot/mit212project/catkin_ws/src/apriltags/include/apriltags.h
+/home/luke/catkin_ws/mit212project/catkin_ws/src/apriltags/include/apriltags.h
 
-/home/robot/mit212project/catkin_ws/src/apriltags/src/apriltags.cpp
+/home/luke/catkin_ws/mit212project/catkin_ws/src/apriltags/src/apriltags.cpp
 ros/ros.h
 -
 ros/forwards.h
@@ -70,11 +70,11 @@ opencv2/highgui.hpp
 cv_bridge/cv_bridge.h
 -
 TagDetector.h
-/home/robot/mit212project/catkin_ws/src/apriltags/src/TagDetector.h
+/home/luke/catkin_ws/mit212project/catkin_ws/src/apriltags/src/TagDetector.h
 TagDetection.h
-/home/robot/mit212project/catkin_ws/src/apriltags/src/TagDetection.h
+/home/luke/catkin_ws/mit212project/catkin_ws/src/apriltags/src/TagDetection.h
 TagFamily.h
-/home/robot/mit212project/catkin_ws/src/apriltags/src/TagFamily.h
+/home/luke/catkin_ws/mit212project/catkin_ws/src/apriltags/src/TagFamily.h
 Eigen/Core
 -
 Eigen/Geometry
@@ -82,7 +82,7 @@ Eigen/Geometry
 visualization_msgs/MarkerArray.h
 -
 yaml-cpp/yaml.h
-/home/robot/mit212project/catkin_ws/src/apriltags/src/yaml-cpp/yaml.h
+/home/luke/catkin_ws/mit212project/catkin_ws/src/apriltags/src/yaml-cpp/yaml.h
 sstream
 -
 fstream
@@ -94,7 +94,7 @@ boost/unordered_map.hpp
 boost/make_shared.hpp
 -
 apriltags.h
-/home/robot/mit212project/catkin_ws/src/apriltags/src/apriltags.h
+/home/luke/catkin_ws/mit212project/catkin_ws/src/apriltags/src/apriltags.h
 apriltags/AprilTagDetections.h
 -
 
@@ -2382,8 +2382,6 @@ opencv2/core/core.hpp
 stdint.h
 -
 float.h
--
-map
 -
 
 /usr/local/include/apriltagscpp/Geometry.h

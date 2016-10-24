@@ -17,49 +17,49 @@ add_custom_target(dynamixel_controllers_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv" NAME_WE)
 add_custom_target(_dynamixel_controllers_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_controllers" "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_controllers" "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv" ""
 )
 
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv" NAME_WE)
 add_custom_target(_dynamixel_controllers_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_controllers" "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_controllers" "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv" ""
 )
 
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv" NAME_WE)
 add_custom_target(_dynamixel_controllers_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_controllers" "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_controllers" "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv" ""
 )
 
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv" NAME_WE)
 add_custom_target(_dynamixel_controllers_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_controllers" "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_controllers" "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv" ""
 )
 
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv" NAME_WE)
 add_custom_target(_dynamixel_controllers_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_controllers" "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_controllers" "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv" ""
 )
 
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv" NAME_WE)
 add_custom_target(_dynamixel_controllers_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_controllers" "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_controllers" "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv" ""
 )
 
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv" NAME_WE)
 add_custom_target(_dynamixel_controllers_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_controllers" "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_controllers" "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv" ""
 )
 
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv" NAME_WE)
 add_custom_target(_dynamixel_controllers_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_controllers" "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_controllers" "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv" ""
 )
 
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv" NAME_WE)
 add_custom_target(_dynamixel_controllers_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_controllers" "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_controllers" "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv" ""
 )
 
 #
@@ -71,55 +71,55 @@ add_custom_target(_dynamixel_controllers_generate_messages_check_deps_${_filenam
 
 ### Generating Services
 _generate_srv_cpp(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_cpp(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_cpp(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_cpp(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_cpp(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_cpp(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_cpp(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_cpp(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_cpp(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dynamixel_controllers
@@ -137,23 +137,23 @@ add_custom_target(dynamixel_controllers_generate_messages_cpp
 add_dependencies(dynamixel_controllers_generate_messages dynamixel_controllers_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_cpp _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_cpp _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_cpp _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_cpp _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_cpp _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_cpp _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_cpp _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_cpp _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_cpp _dynamixel_controllers_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -168,55 +168,55 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS dynamixel_controllers_generate_mess
 
 ### Generating Services
 _generate_srv_eus(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_eus(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_eus(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_eus(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_eus(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_eus(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_eus(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_eus(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_eus(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dynamixel_controllers
@@ -234,23 +234,23 @@ add_custom_target(dynamixel_controllers_generate_messages_eus
 add_dependencies(dynamixel_controllers_generate_messages dynamixel_controllers_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_eus _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_eus _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_eus _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_eus _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_eus _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_eus _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_eus _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_eus _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_eus _dynamixel_controllers_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -265,55 +265,55 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS dynamixel_controllers_generate_mess
 
 ### Generating Services
 _generate_srv_lisp(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_lisp(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_lisp(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_lisp(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_lisp(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_lisp(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_lisp(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_lisp(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_lisp(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dynamixel_controllers
@@ -331,23 +331,23 @@ add_custom_target(dynamixel_controllers_generate_messages_lisp
 add_dependencies(dynamixel_controllers_generate_messages dynamixel_controllers_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_lisp _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_lisp _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_lisp _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_lisp _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_lisp _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_lisp _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_lisp _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_lisp _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_lisp _dynamixel_controllers_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -362,55 +362,55 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS dynamixel_controllers_generate_mess
 
 ### Generating Services
 _generate_srv_nodejs(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_nodejs(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_nodejs(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_nodejs(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_nodejs(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_nodejs(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_nodejs(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_nodejs(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_nodejs(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dynamixel_controllers
@@ -428,23 +428,23 @@ add_custom_target(dynamixel_controllers_generate_messages_nodejs
 add_dependencies(dynamixel_controllers_generate_messages dynamixel_controllers_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_nodejs _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_nodejs _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_nodejs _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_nodejs _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_nodejs _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_nodejs _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_nodejs _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_nodejs _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_nodejs _dynamixel_controllers_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -459,55 +459,55 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS dynamixel_controllers_generate_mess
 
 ### Generating Services
 _generate_srv_py(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_py(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_py(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_py(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_py(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_py(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_py(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_py(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dynamixel_controllers
 )
 _generate_srv_py(dynamixel_controllers
-  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv"
+  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dynamixel_controllers
@@ -525,23 +525,23 @@ add_custom_target(dynamixel_controllers_generate_messages_py
 add_dependencies(dynamixel_controllers_generate_messages dynamixel_controllers_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_py _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetSpeed.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_py _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceSlope.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_py _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_py _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/TorqueEnable.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_py _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetComplianceMargin.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_py _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/RestartController.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_py _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetCompliancePunch.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StartController.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_py _dynamixel_controllers_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/SetTorqueLimit.srv" NAME_WE)
+get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_controllers/srv/StopController.srv" NAME_WE)
 add_dependencies(dynamixel_controllers_generate_messages_py _dynamixel_controllers_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

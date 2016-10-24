@@ -1,8 +1,8 @@
-# Install script for directory: /home/robot/mit212project/catkin_ws/src/me212cv
+# Install script for directory: /home/luke/catkin_ws/mit212project/catkin_ws/src/me212cv
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/robot/mit212project/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/luke/catkin_ws/mit212project/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/robot/mit212project/catkin_ws/build/me212cv/catkin_generated/installspace/me212cv.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/luke/catkin_ws/mit212project/catkin_ws/build/me212cv/catkin_generated/installspace/me212cv.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/me212cv/cmake" TYPE FILE FILES
-    "/home/robot/mit212project/catkin_ws/build/me212cv/catkin_generated/installspace/me212cvConfig.cmake"
-    "/home/robot/mit212project/catkin_ws/build/me212cv/catkin_generated/installspace/me212cvConfig-version.cmake"
+    "/home/luke/catkin_ws/mit212project/catkin_ws/build/me212cv/catkin_generated/installspace/me212cvConfig.cmake"
+    "/home/luke/catkin_ws/mit212project/catkin_ws/build/me212cv/catkin_generated/installspace/me212cvConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/me212cv" TYPE FILE FILES "/home/robot/mit212project/catkin_ws/src/me212cv/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/me212cv" TYPE FILE FILES "/home/luke/catkin_ws/mit212project/catkin_ws/src/me212cv/package.xml")
 endif()
 

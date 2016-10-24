@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/robot/mit212project/catkin_ws/devel:$CMAKE_PREFIX_PATH"
-export PWD="/home/robot/mit212project/catkin_ws/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/robot/mit212project/catkin_ws/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/robot/mit212project/catkin_ws/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/luke/catkin_ws/mit212project/catkin_ws/devel:$CMAKE_PREFIX_PATH"
+export PWD="/home/luke/catkin_ws/mit212project/catkin_ws/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/luke/catkin_ws/mit212project/catkin_ws/src:$ROS_PACKAGE_PATH"

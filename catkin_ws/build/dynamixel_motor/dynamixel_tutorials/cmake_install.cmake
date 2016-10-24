@@ -1,8 +1,8 @@
-# Install script for directory: /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_tutorials
+# Install script for directory: /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_tutorials
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/robot/mit212project/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/luke/catkin_ws/mit212project/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,25 +33,25 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_tutorials/catkin_generated/installspace/dynamixel_tutorials.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_tutorials/catkin_generated/installspace/dynamixel_tutorials.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_tutorials/cmake" TYPE FILE FILES
-    "/home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_tutorials/catkin_generated/installspace/dynamixel_tutorialsConfig.cmake"
-    "/home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_tutorials/catkin_generated/installspace/dynamixel_tutorialsConfig-version.cmake"
+    "/home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_tutorials/catkin_generated/installspace/dynamixel_tutorialsConfig.cmake"
+    "/home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_tutorials/catkin_generated/installspace/dynamixel_tutorialsConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_tutorials" TYPE FILE FILES "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_tutorials/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_tutorials" TYPE FILE FILES "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_tutorials/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_tutorials" TYPE DIRECTORY FILES "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_tutorials/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_tutorials" TYPE DIRECTORY FILES "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_tutorials/launch")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_tutorials" TYPE DIRECTORY FILES "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_tutorials/config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_tutorials" TYPE DIRECTORY FILES "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_tutorials/config")
 endif()
 

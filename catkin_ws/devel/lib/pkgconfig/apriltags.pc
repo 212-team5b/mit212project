@@ -1,8 +1,8 @@
-prefix=/home/robot/mit212project/catkin_ws/devel
+prefix=/home/luke/catkin_ws/mit212project/catkin_ws/devel
 
 Name: apriltags
 Description: Description of apriltags
 Version: 0.0.2
-Cflags: -I/home/robot/mit212project/catkin_ws/devel/include -I/home/robot/mit212project/catkin_ws/src/apriltags/include
-Libs: -L/home/robot/mit212project/catkin_ws/devel/lib 
+Cflags: -I/home/luke/catkin_ws/mit212project/catkin_ws/devel/include -I/home/luke/catkin_ws/mit212project/catkin_ws/src/apriltags/include
+Libs: -L/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib 
 Requires: cv_bridge std_msgs sensor_msgs image_transport roscpp geometry_msgs

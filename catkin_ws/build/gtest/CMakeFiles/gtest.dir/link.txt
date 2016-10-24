@@ -1,1 +1,1 @@
-/usr/bin/c++  -fPIC   -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/home/robot/mit212project/catkin_ws/build/gtest/src -lpthread -Wl,-rpath,/home/robot/mit212project/catkin_ws/build/gtest/src 
+/usr/bin/c++  -fPIC   -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/home/luke/catkin_ws/mit212project/catkin_ws/build/gtest/src -lpthread -Wl,-rpath,/home/luke/catkin_ws/mit212project/catkin_ws/build/gtest/src 

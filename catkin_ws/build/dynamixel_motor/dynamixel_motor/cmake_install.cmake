@@ -1,8 +1,8 @@
-# Install script for directory: /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_motor
+# Install script for directory: /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_motor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/robot/mit212project/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/luke/catkin_ws/mit212project/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,6 +33,6 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_motor" TYPE FILE FILES "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_motor/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_motor" TYPE FILE FILES "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_motor/package.xml")
 endif()
 
