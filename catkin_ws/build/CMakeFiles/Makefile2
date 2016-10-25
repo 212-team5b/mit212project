@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luke/catkin_ws/mit212project/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/robot/mit212project/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luke/catkin_ws/mit212project/catkin_ws/build
+CMAKE_BINARY_DIR = /home/robot/mit212project/catkin_ws/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/clean_test_results.dir
@@ -66,14 +66,14 @@ CMAKE_BINARY_DIR = /home/luke/catkin_ws/mit212project/catkin_ws/build
 CMakeFiles/clean_test_results.dir/all:
 	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/depend
 	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target clean_test_results"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target clean_test_results"
 .PHONY : CMakeFiles/clean_test_results.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/clean_test_results.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/clean_test_results.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : CMakeFiles/clean_test_results.dir/rule
 
 # Convenience name for target.
@@ -98,14 +98,14 @@ clean: CMakeFiles/clean_test_results.dir/clean
 CMakeFiles/run_tests.dir/all:
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/depend
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target run_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target run_tests"
 .PHONY : CMakeFiles/run_tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests.dir/rule
 
 # Convenience name for target.
@@ -130,14 +130,14 @@ clean: CMakeFiles/run_tests.dir/clean
 CMakeFiles/download_extra_data.dir/all:
 	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/depend
 	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target download_extra_data"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target download_extra_data"
 .PHONY : CMakeFiles/download_extra_data.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/download_extra_data.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/download_extra_data.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : CMakeFiles/download_extra_data.dir/rule
 
 # Convenience name for target.
@@ -162,14 +162,14 @@ clean: CMakeFiles/download_extra_data.dir/clean
 CMakeFiles/tests.dir/all:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target tests"
 .PHONY : CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : CMakeFiles/tests.dir/rule
 
 # Convenience name for target.
@@ -194,14 +194,14 @@ clean: CMakeFiles/tests.dir/clean
 CMakeFiles/doxygen.dir/all:
 	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/depend
 	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target doxygen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target doxygen"
 .PHONY : CMakeFiles/doxygen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/doxygen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/doxygen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : CMakeFiles/doxygen.dir/rule
 
 # Convenience name for target.
@@ -245,14 +245,14 @@ gtest/preinstall:
 gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=79,80 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=79,80 "Built target gtest"
 .PHONY : gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : gtest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -277,14 +277,14 @@ clean: gtest/CMakeFiles/gtest.dir/clean
 gtest/CMakeFiles/gtest_main.dir/all: gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=81,82 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=81,82 "Built target gtest_main"
 .PHONY : gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : gtest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
@@ -327,14 +327,14 @@ dynamixel_motor/dynamixel_driver/preinstall:
 dynamixel_motor/dynamixel_driver/CMakeFiles/_catkin_empty_exported_target.dir/all:
 	$(MAKE) -f dynamixel_motor/dynamixel_driver/CMakeFiles/_catkin_empty_exported_target.dir/build.make dynamixel_motor/dynamixel_driver/CMakeFiles/_catkin_empty_exported_target.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_driver/CMakeFiles/_catkin_empty_exported_target.dir/build.make dynamixel_motor/dynamixel_driver/CMakeFiles/_catkin_empty_exported_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
 .PHONY : dynamixel_motor/dynamixel_driver/CMakeFiles/_catkin_empty_exported_target.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_driver/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_driver/CMakeFiles/_catkin_empty_exported_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_driver/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 # Convenience name for target.
@@ -397,7 +397,7 @@ dynamixel_motor/dynamixel_controllers/all: dynamixel_motor/dynamixel_controllers
 .PHONY : dynamixel_motor/dynamixel_controllers/all
 
 # Convenience name for "clean" pass in the directory.
-dynamixel_motor/dynamixel_controllers/clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/clean
+dynamixel_motor/dynamixel_controllers/clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/clean
 dynamixel_motor/dynamixel_controllers/clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/clean
 dynamixel_motor/dynamixel_controllers/clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/clean
 dynamixel_motor/dynamixel_controllers/clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/clean
@@ -406,7 +406,7 @@ dynamixel_motor/dynamixel_controllers/clean: dynamixel_motor/dynamixel_controlle
 dynamixel_motor/dynamixel_controllers/clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/clean
 dynamixel_motor/dynamixel_controllers/clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/clean
 dynamixel_motor/dynamixel_controllers/clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/clean
-dynamixel_motor/dynamixel_controllers/clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/clean
+dynamixel_motor/dynamixel_controllers/clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/clean
 dynamixel_motor/dynamixel_controllers/clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/clean
 dynamixel_motor/dynamixel_controllers/clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/clean
 dynamixel_motor/dynamixel_controllers/clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/clean
@@ -426,34 +426,34 @@ dynamixel_motor/dynamixel_controllers/preinstall:
 .PHONY : dynamixel_motor/dynamixel_controllers/preinstall
 
 #=============================================================================
-# Target rules for target dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir
+# Target rules for target dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir
 
 # All Build rule for target.
-dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/all:
-	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/depend
-	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_controllers_generate_messages_check_deps_StopController"
-.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/all
+dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/all:
+	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/depend
+	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit"
+.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/all
 
 # Build rule for subdir invocation for target.
-dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
-.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/rule
+dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
+.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/rule
 
 # Convenience name for target.
-_dynamixel_controllers_generate_messages_check_deps_StopController: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/rule
+_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/rule
 
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_StopController
-
-# clean rule for target.
-dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/clean:
-	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/clean
-.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/clean
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit
 
 # clean rule for target.
-clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/clean
+dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/clean:
+	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/clean
+.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/clean
+
+# clean rule for target.
+clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/clean
 
 .PHONY : clean
 
@@ -464,14 +464,14 @@ clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_g
 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/all:
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch"
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/rule
 
 # Convenience name for target.
@@ -496,14 +496,14 @@ clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_g
 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/all:
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_controllers_generate_messages_check_deps_SetSpeed"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_controllers_generate_messages_check_deps_SetSpeed"
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/rule
 
 # Convenience name for target.
@@ -528,14 +528,14 @@ clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_g
 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/all:
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_controllers_generate_messages_check_deps_TorqueEnable"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_controllers_generate_messages_check_deps_TorqueEnable"
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/rule
 
 # Convenience name for target.
@@ -560,14 +560,14 @@ clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_g
 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/all:
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin"
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/rule
 
 # Convenience name for target.
@@ -592,14 +592,14 @@ clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_g
 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/all:
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_controllers_generate_messages_check_deps_RestartController"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_controllers_generate_messages_check_deps_RestartController"
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/rule
 
 # Convenience name for target.
@@ -628,7 +628,7 @@ dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/all
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_controllers_generate_messages"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_controllers_generate_messages"
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/all
 
 # Include target in all.
@@ -638,9 +638,9 @@ all: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gene
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 47
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -665,14 +665,14 @@ clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_ge
 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/all:
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_controllers_generate_messages_check_deps_StartController"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_controllers_generate_messages_check_deps_StartController"
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/rule
 
 # Convenience name for target.
@@ -697,14 +697,14 @@ clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_g
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/all
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_controllers_gennodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_controllers_gennodejs"
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -723,34 +723,34 @@ clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_ge
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir
+# Target rules for target dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir
 
 # All Build rule for target.
-dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/all:
-	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/depend
-	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit"
-.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/all
+dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/all:
+	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/depend
+	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_controllers_generate_messages_check_deps_StopController"
+.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/all
 
 # Build rule for subdir invocation for target.
-dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
-.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/rule
+dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
+.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/rule
 
 # Convenience name for target.
-_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/rule
+_dynamixel_controllers_generate_messages_check_deps_StopController: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/rule
 
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit
-
-# clean rule for target.
-dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/clean:
-	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/clean
-.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/clean
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_StopController
 
 # clean rule for target.
-clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/clean
+dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/clean:
+	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/clean
+.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/clean
+
+# clean rule for target.
+clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/clean
 
 .PHONY : clean
 
@@ -758,25 +758,25 @@ clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_g
 # Target rules for target dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir
 
 # All Build rule for target.
-dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/all
+dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/all
-dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/all
+dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/all
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=15,16,17,18,19,20,21,22,23 "Built target dynamixel_controllers_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=15,16,17,18,19,20,21,22,23 "Built target dynamixel_controllers_generate_messages_cpp"
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -798,25 +798,25 @@ clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_ge
 # Target rules for target dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir
 
 # All Build rule for target.
-dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/all
+dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/all
-dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/all
+dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/all
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=52,53,54,55,56,57,58,59,60,61 "Built target dynamixel_controllers_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=52,53,54,55,56,57,58,59,60,61 "Built target dynamixel_controllers_generate_messages_py"
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -841,14 +841,14 @@ clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_ge
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/all
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_controllers_gencpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_controllers_gencpp"
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/rule
 
 # Convenience name for target.
@@ -870,25 +870,25 @@ clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_ge
 # Target rules for target dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir
 
 # All Build rule for target.
-dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/all
+dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/all
-dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/all
+dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/all
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=24,25,26,27,28,29,30,31,32,33 "Built target dynamixel_controllers_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=24,25,26,27,28,29,30,31,32,33 "Built target dynamixel_controllers_generate_messages_eus"
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -910,25 +910,25 @@ clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_ge
 # Target rules for target dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir
 
 # All Build rule for target.
-dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/all
+dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/all
-dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/all
+dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/all
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=34,35,36,37,38,39,40,41,42 "Built target dynamixel_controllers_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=34,35,36,37,38,39,40,41,42 "Built target dynamixel_controllers_generate_messages_lisp"
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -953,14 +953,14 @@ clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_ge
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/all
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_controllers_geneus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_controllers_geneus"
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/rule
 
 # Convenience name for target.
@@ -985,14 +985,14 @@ clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_ge
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/all
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_controllers_genlisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_controllers_genlisp"
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/rule
 
 # Convenience name for target.
@@ -1014,25 +1014,25 @@ clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_ge
 # Target rules for target dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir
 
 # All Build rule for target.
-dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/all
+dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/all
-dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/all
+dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/all
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/all
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=43,44,45,46,47,48,49,50,51 "Built target dynamixel_controllers_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=43,44,45,46,47,48,49,50,51 "Built target dynamixel_controllers_generate_messages_nodejs"
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1057,14 +1057,14 @@ clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_ge
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/all: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/all
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_controllers_genpy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_controllers_genpy"
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/rule
 
 # Convenience name for target.
@@ -1089,14 +1089,14 @@ clean: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_ge
 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/all:
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope"
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/rule
 
 # Convenience name for target.
@@ -1160,14 +1160,14 @@ dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_cpp.d
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_cpp.dir/all: dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_cpp.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_cpp.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=62,63,64 "Built target dynamixel_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=62,63,64 "Built target dynamixel_msgs_generate_messages_cpp"
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1195,14 +1195,14 @@ dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_py.di
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_py.dir/all: dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorStateList.dir/all
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_py.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_py.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=75,76,77,78 "Built target dynamixel_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=75,76,77,78 "Built target dynamixel_msgs_generate_messages_py"
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1227,14 +1227,14 @@ clean: dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_message
 dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1259,14 +1259,14 @@ clean: dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_node
 dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_JointState.dir/all:
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_JointState.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_JointState.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_JointState.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_JointState.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_msgs_generate_messages_check_deps_JointState"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_msgs_generate_messages_check_deps_JointState"
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_JointState.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_JointState.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_JointState.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_JointState.dir/rule
 
 # Convenience name for target.
@@ -1295,7 +1295,7 @@ dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages.dir/a
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages.dir/all: dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_nodejs.dir/all
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_msgs_generate_messages"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_msgs_generate_messages"
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages.dir/all
 
 # Include target in all.
@@ -1305,9 +1305,9 @@ all: dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages.
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -1332,14 +1332,14 @@ clean: dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_message
 dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorState.dir/all:
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorState.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorState.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorState.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorState.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_msgs_generate_messages_check_deps_MotorState"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_msgs_generate_messages_check_deps_MotorState"
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorState.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorState.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorState.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorState.dir/rule
 
 # Convenience name for target.
@@ -1364,14 +1364,14 @@ clean: dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messag
 dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all:
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1396,14 +1396,14 @@ clean: dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_eus.
 dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1428,14 +1428,14 @@ clean: dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_lisp
 dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all:
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1460,14 +1460,14 @@ clean: dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_py.d
 dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorStateList.dir/all:
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorStateList.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorStateList.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorStateList.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorStateList.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_msgs_generate_messages_check_deps_MotorStateList"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _dynamixel_msgs_generate_messages_check_deps_MotorStateList"
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorStateList.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorStateList.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorStateList.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorStateList.dir/rule
 
 # Convenience name for target.
@@ -1492,14 +1492,14 @@ clean: dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messag
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_gencpp.dir/all: dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_gencpp.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_gencpp.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_gencpp.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_gencpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_msgs_gencpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_msgs_gencpp"
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_gencpp.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_gencpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_gencpp.dir/rule
 
 # Convenience name for target.
@@ -1524,14 +1524,14 @@ clean: dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_gencpp.dir/clean
 dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1559,14 +1559,14 @@ dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_eus.d
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_eus.dir/all: dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorStateList.dir/all
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_eus.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_eus.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=65,66,67,68 "Built target dynamixel_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=65,66,67,68 "Built target dynamixel_msgs_generate_messages_eus"
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1591,14 +1591,14 @@ clean: dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_message
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_geneus.dir/all: dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_eus.dir/all
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_geneus.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_geneus.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_geneus.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_geneus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_msgs_geneus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_msgs_geneus"
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_geneus.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_geneus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_geneus.dir/rule
 
 # Convenience name for target.
@@ -1623,14 +1623,14 @@ clean: dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_geneus.dir/clean
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_gennodejs.dir/all: dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_nodejs.dir/all
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_gennodejs.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_gennodejs.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_gennodejs.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_gennodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_msgs_gennodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_msgs_gennodejs"
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_gennodejs.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_gennodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -1658,14 +1658,14 @@ dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_lisp.
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_lisp.dir/all: dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorStateList.dir/all
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_lisp.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_lisp.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=69,70,71 "Built target dynamixel_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=69,70,71 "Built target dynamixel_msgs_generate_messages_lisp"
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1690,14 +1690,14 @@ clean: dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_message
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genlisp.dir/all: dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genlisp.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genlisp.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genlisp.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genlisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_msgs_genlisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_msgs_genlisp"
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genlisp.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genlisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genlisp.dir/rule
 
 # Convenience name for target.
@@ -1725,14 +1725,14 @@ dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_nodej
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_nodejs.dir/all: dynamixel_motor/dynamixel_msgs/CMakeFiles/_dynamixel_msgs_generate_messages_check_deps_MotorStateList.dir/all
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_nodejs.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_nodejs.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=72,73,74 "Built target dynamixel_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=72,73,74 "Built target dynamixel_msgs_generate_messages_nodejs"
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1757,14 +1757,14 @@ clean: dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_message
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genpy.dir/all: dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_generate_messages_py.dir/all
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genpy.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genpy.dir/depend
 	$(MAKE) -f dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genpy.dir/build.make dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genpy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_msgs_genpy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target dynamixel_msgs_genpy"
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genpy.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genpy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genpy.dir/rule
 
 # Convenience name for target.
@@ -1811,14 +1811,14 @@ me212arm/preinstall:
 me212arm/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all:
 	$(MAKE) -f me212arm/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make me212arm/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f me212arm/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make me212arm/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
 .PHONY : me212arm/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 me212arm/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 me212arm/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : me212arm/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1843,14 +1843,14 @@ clean: me212arm/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
 me212arm/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all:
 	$(MAKE) -f me212arm/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make me212arm/CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f me212arm/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make me212arm/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_eus"
 .PHONY : me212arm/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 me212arm/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 me212arm/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : me212arm/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1875,14 +1875,14 @@ clean: me212arm/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
 me212arm/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) -f me212arm/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make me212arm/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f me212arm/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make me212arm/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
 .PHONY : me212arm/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 me212arm/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 me212arm/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : me212arm/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1907,14 +1907,14 @@ clean: me212arm/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 me212arm/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) -f me212arm/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make me212arm/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f me212arm/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make me212arm/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
 .PHONY : me212arm/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 me212arm/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 me212arm/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : me212arm/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1939,14 +1939,14 @@ clean: me212arm/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 me212arm/CMakeFiles/geometry_msgs_generate_messages_py.dir/all:
 	$(MAKE) -f me212arm/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make me212arm/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f me212arm/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make me212arm/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_py"
 .PHONY : me212arm/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 me212arm/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 me212arm/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : me212arm/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -2072,14 +2072,14 @@ apriltags/preinstall:
 apriltags/CMakeFiles/apriltags_genpy.dir/all: apriltags/CMakeFiles/apriltags_generate_messages_py.dir/all
 	$(MAKE) -f apriltags/CMakeFiles/apriltags_genpy.dir/build.make apriltags/CMakeFiles/apriltags_genpy.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/apriltags_genpy.dir/build.make apriltags/CMakeFiles/apriltags_genpy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target apriltags_genpy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target apriltags_genpy"
 .PHONY : apriltags/CMakeFiles/apriltags_genpy.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/apriltags_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/apriltags_genpy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/apriltags_genpy.dir/rule
 
 # Convenience name for target.
@@ -2107,14 +2107,14 @@ apriltags/CMakeFiles/apriltags_generate_messages_nodejs.dir/all: apriltags/CMake
 apriltags/CMakeFiles/apriltags_generate_messages_nodejs.dir/all: apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDetections.dir/all
 	$(MAKE) -f apriltags/CMakeFiles/apriltags_generate_messages_nodejs.dir/build.make apriltags/CMakeFiles/apriltags_generate_messages_nodejs.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/apriltags_generate_messages_nodejs.dir/build.make apriltags/CMakeFiles/apriltags_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=10,11 "Built target apriltags_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=10,11 "Built target apriltags_generate_messages_nodejs"
 .PHONY : apriltags/CMakeFiles/apriltags_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/apriltags_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/apriltags_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/apriltags_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -2139,14 +2139,14 @@ clean: apriltags/CMakeFiles/apriltags_generate_messages_nodejs.dir/clean
 apriltags/CMakeFiles/apriltags_genlisp.dir/all: apriltags/CMakeFiles/apriltags_generate_messages_lisp.dir/all
 	$(MAKE) -f apriltags/CMakeFiles/apriltags_genlisp.dir/build.make apriltags/CMakeFiles/apriltags_genlisp.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/apriltags_genlisp.dir/build.make apriltags/CMakeFiles/apriltags_genlisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target apriltags_genlisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target apriltags_genlisp"
 .PHONY : apriltags/CMakeFiles/apriltags_genlisp.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/apriltags_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/apriltags_genlisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/apriltags_genlisp.dir/rule
 
 # Convenience name for target.
@@ -2174,14 +2174,14 @@ apriltags/CMakeFiles/apriltags_generate_messages_lisp.dir/all: apriltags/CMakeFi
 apriltags/CMakeFiles/apriltags_generate_messages_lisp.dir/all: apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDetections.dir/all
 	$(MAKE) -f apriltags/CMakeFiles/apriltags_generate_messages_lisp.dir/build.make apriltags/CMakeFiles/apriltags_generate_messages_lisp.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/apriltags_generate_messages_lisp.dir/build.make apriltags/CMakeFiles/apriltags_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=8,9 "Built target apriltags_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=8,9 "Built target apriltags_generate_messages_lisp"
 .PHONY : apriltags/CMakeFiles/apriltags_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/apriltags_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/apriltags_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/apriltags_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -2206,14 +2206,14 @@ clean: apriltags/CMakeFiles/apriltags_generate_messages_lisp.dir/clean
 apriltags/CMakeFiles/roscpp_generate_messages_py.dir/all:
 	$(MAKE) -f apriltags/CMakeFiles/roscpp_generate_messages_py.dir/build.make apriltags/CMakeFiles/roscpp_generate_messages_py.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/roscpp_generate_messages_py.dir/build.make apriltags/CMakeFiles/roscpp_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
 .PHONY : apriltags/CMakeFiles/roscpp_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/roscpp_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -2238,14 +2238,14 @@ clean: apriltags/CMakeFiles/roscpp_generate_messages_py.dir/clean
 apriltags/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all:
 	$(MAKE) -f apriltags/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make apriltags/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make apriltags/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_nodejs"
 .PHONY : apriltags/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -2270,14 +2270,14 @@ clean: apriltags/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
 apriltags/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
 	$(MAKE) -f apriltags/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make apriltags/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make apriltags/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
 .PHONY : apriltags/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -2302,14 +2302,14 @@ clean: apriltags/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 apriltags/CMakeFiles/roscpp_generate_messages_eus.dir/all:
 	$(MAKE) -f apriltags/CMakeFiles/roscpp_generate_messages_eus.dir/build.make apriltags/CMakeFiles/roscpp_generate_messages_eus.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/roscpp_generate_messages_eus.dir/build.make apriltags/CMakeFiles/roscpp_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
 .PHONY : apriltags/CMakeFiles/roscpp_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/roscpp_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -2334,14 +2334,14 @@ clean: apriltags/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDetection.dir/all:
 	$(MAKE) -f apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDetection.dir/build.make apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDetection.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDetection.dir/build.make apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDetection.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _apriltags_generate_messages_check_deps_AprilTagDetection"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _apriltags_generate_messages_check_deps_AprilTagDetection"
 .PHONY : apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDetection.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDetection.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDetection.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDetection.dir/rule
 
 # Convenience name for target.
@@ -2366,14 +2366,14 @@ clean: apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDete
 apriltags/CMakeFiles/apriltags_geneus.dir/all: apriltags/CMakeFiles/apriltags_generate_messages_eus.dir/all
 	$(MAKE) -f apriltags/CMakeFiles/apriltags_geneus.dir/build.make apriltags/CMakeFiles/apriltags_geneus.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/apriltags_geneus.dir/build.make apriltags/CMakeFiles/apriltags_geneus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target apriltags_geneus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target apriltags_geneus"
 .PHONY : apriltags/CMakeFiles/apriltags_geneus.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/apriltags_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/apriltags_geneus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/apriltags_geneus.dir/rule
 
 # Convenience name for target.
@@ -2398,14 +2398,14 @@ clean: apriltags/CMakeFiles/apriltags_geneus.dir/clean
 apriltags/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
 	$(MAKE) -f apriltags/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make apriltags/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make apriltags/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_lisp"
 .PHONY : apriltags/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -2430,14 +2430,14 @@ clean: apriltags/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 apriltags/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
 	$(MAKE) -f apriltags/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make apriltags/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make apriltags/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
 .PHONY : apriltags/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -2462,14 +2462,14 @@ clean: apriltags/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 apriltags/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) -f apriltags/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make apriltags/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make apriltags/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_cpp"
 .PHONY : apriltags/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -2494,14 +2494,14 @@ clean: apriltags/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
 apriltags/CMakeFiles/apriltags_gencpp.dir/all: apriltags/CMakeFiles/apriltags_generate_messages_cpp.dir/all
 	$(MAKE) -f apriltags/CMakeFiles/apriltags_gencpp.dir/build.make apriltags/CMakeFiles/apriltags_gencpp.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/apriltags_gencpp.dir/build.make apriltags/CMakeFiles/apriltags_gencpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target apriltags_gencpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target apriltags_gencpp"
 .PHONY : apriltags/CMakeFiles/apriltags_gencpp.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/apriltags_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/apriltags_gencpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/apriltags_gencpp.dir/rule
 
 # Convenience name for target.
@@ -2526,14 +2526,14 @@ clean: apriltags/CMakeFiles/apriltags_gencpp.dir/clean
 apriltags/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) -f apriltags/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make apriltags/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make apriltags/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_lisp"
 .PHONY : apriltags/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -2561,14 +2561,14 @@ apriltags/CMakeFiles/apriltags_generate_messages_py.dir/all: apriltags/CMakeFile
 apriltags/CMakeFiles/apriltags_generate_messages_py.dir/all: apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDetections.dir/all
 	$(MAKE) -f apriltags/CMakeFiles/apriltags_generate_messages_py.dir/build.make apriltags/CMakeFiles/apriltags_generate_messages_py.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/apriltags_generate_messages_py.dir/build.make apriltags/CMakeFiles/apriltags_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=12,13,14 "Built target apriltags_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=12,13,14 "Built target apriltags_generate_messages_py"
 .PHONY : apriltags/CMakeFiles/apriltags_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/apriltags_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/apriltags_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/apriltags_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -2593,14 +2593,14 @@ clean: apriltags/CMakeFiles/apriltags_generate_messages_py.dir/clean
 apriltags/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
 	$(MAKE) -f apriltags/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make apriltags/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make apriltags/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_py"
 .PHONY : apriltags/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -2628,14 +2628,14 @@ apriltags/CMakeFiles/apriltags_generate_messages_eus.dir/all: apriltags/CMakeFil
 apriltags/CMakeFiles/apriltags_generate_messages_eus.dir/all: apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDetections.dir/all
 	$(MAKE) -f apriltags/CMakeFiles/apriltags_generate_messages_eus.dir/build.make apriltags/CMakeFiles/apriltags_generate_messages_eus.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/apriltags_generate_messages_eus.dir/build.make apriltags/CMakeFiles/apriltags_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=5,6,7 "Built target apriltags_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=5,6,7 "Built target apriltags_generate_messages_eus"
 .PHONY : apriltags/CMakeFiles/apriltags_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/apriltags_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/apriltags_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/apriltags_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -2660,14 +2660,14 @@ clean: apriltags/CMakeFiles/apriltags_generate_messages_eus.dir/clean
 apriltags/CMakeFiles/apriltags_gennodejs.dir/all: apriltags/CMakeFiles/apriltags_generate_messages_nodejs.dir/all
 	$(MAKE) -f apriltags/CMakeFiles/apriltags_gennodejs.dir/build.make apriltags/CMakeFiles/apriltags_gennodejs.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/apriltags_gennodejs.dir/build.make apriltags/CMakeFiles/apriltags_gennodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target apriltags_gennodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target apriltags_gennodejs"
 .PHONY : apriltags/CMakeFiles/apriltags_gennodejs.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/apriltags_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/apriltags_gennodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/apriltags_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -2692,14 +2692,14 @@ clean: apriltags/CMakeFiles/apriltags_gennodejs.dir/clean
 apriltags/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all:
 	$(MAKE) -f apriltags/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make apriltags/CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make apriltags/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_eus"
 .PHONY : apriltags/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -2724,7 +2724,7 @@ clean: apriltags/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
 apriltags/CMakeFiles/apriltags.dir/all: apriltags/CMakeFiles/apriltags_gencpp.dir/all
 	$(MAKE) -f apriltags/CMakeFiles/apriltags.dir/build.make apriltags/CMakeFiles/apriltags.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/apriltags.dir/build.make apriltags/CMakeFiles/apriltags.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=1,2 "Built target apriltags"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=1,2 "Built target apriltags"
 .PHONY : apriltags/CMakeFiles/apriltags.dir/all
 
 # Include target in all.
@@ -2734,9 +2734,9 @@ all: apriltags/CMakeFiles/apriltags.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/apriltags.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/apriltags.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/apriltags.dir/rule
 
 # Convenience name for target.
@@ -2761,14 +2761,14 @@ clean: apriltags/CMakeFiles/apriltags.dir/clean
 apriltags/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
 	$(MAKE) -f apriltags/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make apriltags/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make apriltags/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
 .PHONY : apriltags/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -2793,14 +2793,14 @@ clean: apriltags/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDetections.dir/all:
 	$(MAKE) -f apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDetections.dir/build.make apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDetections.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDetections.dir/build.make apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDetections.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _apriltags_generate_messages_check_deps_AprilTagDetections"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target _apriltags_generate_messages_check_deps_AprilTagDetections"
 .PHONY : apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDetections.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDetections.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDetections.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDetections.dir/rule
 
 # Convenience name for target.
@@ -2825,14 +2825,14 @@ clean: apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDete
 apriltags/CMakeFiles/roscpp_generate_messages_nodejs.dir/all:
 	$(MAKE) -f apriltags/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make apriltags/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make apriltags/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_nodejs"
 .PHONY : apriltags/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -2857,14 +2857,14 @@ clean: apriltags/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 apriltags/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) -f apriltags/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make apriltags/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make apriltags/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_lisp"
 .PHONY : apriltags/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -2889,14 +2889,14 @@ clean: apriltags/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 apriltags/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
 	$(MAKE) -f apriltags/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make apriltags/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make apriltags/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_py"
 .PHONY : apriltags/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -2921,14 +2921,14 @@ clean: apriltags/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 apriltags/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) -f apriltags/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make apriltags/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make apriltags/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
 .PHONY : apriltags/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -2957,7 +2957,7 @@ apriltags/CMakeFiles/apriltags_generate_messages.dir/all: apriltags/CMakeFiles/a
 apriltags/CMakeFiles/apriltags_generate_messages.dir/all: apriltags/CMakeFiles/apriltags_generate_messages_cpp.dir/all
 	$(MAKE) -f apriltags/CMakeFiles/apriltags_generate_messages.dir/build.make apriltags/CMakeFiles/apriltags_generate_messages.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/apriltags_generate_messages.dir/build.make apriltags/CMakeFiles/apriltags_generate_messages.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target apriltags_generate_messages"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num= "Built target apriltags_generate_messages"
 .PHONY : apriltags/CMakeFiles/apriltags_generate_messages.dir/all
 
 # Include target in all.
@@ -2967,9 +2967,9 @@ all: apriltags/CMakeFiles/apriltags_generate_messages.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/apriltags_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/apriltags_generate_messages.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/apriltags_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -2997,14 +2997,14 @@ apriltags/CMakeFiles/apriltags_generate_messages_cpp.dir/all: apriltags/CMakeFil
 apriltags/CMakeFiles/apriltags_generate_messages_cpp.dir/all: apriltags/CMakeFiles/_apriltags_generate_messages_check_deps_AprilTagDetections.dir/all
 	$(MAKE) -f apriltags/CMakeFiles/apriltags_generate_messages_cpp.dir/build.make apriltags/CMakeFiles/apriltags_generate_messages_cpp.dir/depend
 	$(MAKE) -f apriltags/CMakeFiles/apriltags_generate_messages_cpp.dir/build.make apriltags/CMakeFiles/apriltags_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=3,4 "Built target apriltags_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=3,4 "Built target apriltags_generate_messages_cpp"
 .PHONY : apriltags/CMakeFiles/apriltags_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 apriltags/CMakeFiles/apriltags_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 apriltags/CMakeFiles/apriltags_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : apriltags/CMakeFiles/apriltags_generate_messages_cpp.dir/rule
 
 # Convenience name for target.

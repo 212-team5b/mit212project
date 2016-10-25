@@ -77,11 +77,20 @@ cmd "4.4-planning-rrt" {
     host = "localhost";
 }
 
+script "practice-rviz" {
+    start cmd "0-roscore";
+    wait ms 1000;
+    start cmd "0.5-frames";
+    wait ms 500;
+    start cmd "2-rviz";
+    start cmd "2.1-kinect";
+    start cmd "2.2-apriltag";
+}
 
 script "run-navigate" {
     start cmd "0-roscore";
     wait ms 1000;
-    start cmd "1-frames";
+    start cmd "0.5-frames";
     wait ms 500;
     start cmd "2-rviz";
     start cmd "2.1-kinect";

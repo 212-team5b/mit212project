@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "dynamixel_controllers".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "dynamixel_tutorials"
-PROJECT_SPACE_DIR = "/home/luke/catkin_ws/mit212project/catkin_ws/install"
+PROJECT_SPACE_DIR = "/home/robot/mit212project/catkin_ws/install"
 PROJECT_VERSION = "0.4.0"

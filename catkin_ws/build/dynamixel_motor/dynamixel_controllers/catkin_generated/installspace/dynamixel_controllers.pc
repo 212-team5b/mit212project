@@ -1,8 +1,8 @@
-prefix=/home/luke/catkin_ws/mit212project/catkin_ws/install
+prefix=/home/robot/mit212project/catkin_ws/install
 
 Name: dynamixel_controllers
 Description: Description of dynamixel_controllers
 Version: 0.4.0
-Cflags: -I/home/luke/catkin_ws/mit212project/catkin_ws/install/include
-Libs: -L/home/luke/catkin_ws/mit212project/catkin_ws/install/lib 
+Cflags: -I/home/robot/mit212project/catkin_ws/install/include
+Libs: -L/home/robot/mit212project/catkin_ws/install/lib 
 Requires: rospy actionlib dynamixel_driver std_msgs trajectory_msgs diagnostic_msgs dynamixel_msgs control_msgs

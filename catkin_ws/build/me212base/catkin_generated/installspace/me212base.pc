@@ -1,8 +1,8 @@
-prefix=/home/luke/catkin_ws/mit212project/catkin_ws/install
+prefix=/home/robot/mit212project/catkin_ws/install
 
 Name: me212base
 Description: Description of me212base
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/luke/catkin_ws/mit212project/catkin_ws/install/lib 
+Libs: -L/home/robot/mit212project/catkin_ws/install/lib 
 Requires: 

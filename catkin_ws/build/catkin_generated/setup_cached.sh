@@ -7,7 +7,8 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/luke/catkin_ws/mit212project/catkin_ws/devel:$CMAKE_PREFIX_PATH"
-export PWD="/home/luke/catkin_ws/mit212project/catkin_ws/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/luke/catkin_ws/mit212project/catkin_ws/src:$ROS_PACKAGE_PATH"
+export LD_LIBRARY_PATH="/opt/ros/kinetic/lib:/usr/local/lib:/usr/local/cuda/lib64"
+export PKG_CONFIG_PATH="/opt/ros/kinetic/lib/pkgconfig"
+export PWD="/home/robot/mit212project/catkin_ws/build"
+export PYTHONPATH="/opt/ros/kinetic/lib/python2.7/dist-packages"
+export ROS_PACKAGE_PATH="/home/robot/mit212project/catkin_ws/src:/opt/ros/kinetic/share"
