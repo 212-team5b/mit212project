@@ -64,7 +64,7 @@ class ApriltagNavigator():
             # 1. get robot pose
             robot_pose3d = helper.lookupTransformList('/map', '/base_link', self.listener)
             
-            if robot_pose3d is None:
+            if robot_pose3d is None: #rotate in place maybe??
                 print '1. Tag not in view, Stop'
                 wv.desiredWV_R = 0  # right, left
                 wv.desiredWV_L = 0
@@ -77,52 +77,24 @@ class ApriltagNavigator():
             robot_yaw = tfm.euler_from_quaternion(robot_pose3d[3:7]) [2]
             robot_pose2d = robot_position2d + [robot_yaw]
             
+
+            # Call proper function to get obstacles (if there are any) and pose
+	    #     - will use kinect to check if obstacle (through distance sensor or rgb corner filter) and generate pose
+           
             # 2. navigation policy
-            # 2.1 if       in the target, 
-            # 2.2 else if  close to target position, turn to the target orientation
-            # 2.3 else if  in the correct heading, go straight to the target position,
-            # 2.4 else     turn in the direction of the target position
-            
-            pos_delta = np.array(target_position2d) - np.array(robot_position2d)
-            robot_heading_vec = np.array([np.cos(robot_yaw), np.sin(robot_yaw)])
-            heading_err_cross = helper.cross2d( robot_heading_vec, pos_delta / np.linalg.norm(pos_delta) )
-            
-            # print 'robot_position2d', robot_position2d, 'target_position2d', target_position2d
-            # print 'pos_delta', pos_delta
-            # print 'robot_yaw', robot_yaw
-            # print 'norm delta', np.linalg.norm( pos_delta ), 'diffrad', diffrad(robot_yaw, target_pose2d[2])
-            # print 'heading_err_cross', heading_err_cross
-            
-            if arrived or (np.linalg.norm( pos_delta ) < 0.08 and np.fabs(diffrad(robot_yaw, target_pose2d[2]))<0.05) :
-                print 'Case 2.1  Stop'
-                wv.desiredWV_R = 0  
-                wv.desiredWV_L = 0
-                arrived = True
-            elif np.linalg.norm( pos_delta ) < 0.08:
-                arrived_position = True
-                if diffrad(robot_yaw, target_pose2d[2]) > 0:
-                    print 'Case 2.2.1  Turn right slowly'      
-                    wv.desiredWV_R = -0.05 
-                    wv.desiredWV_L = 0.05
-                else:
-                    print 'Case 2.2.2  Turn left slowly'
-                    wv.desiredWV_R = 0.05  
-                    wv.desiredWV_L = -0.05
-                    
-            elif arrived_position or np.fabs( heading_err_cross ) < 0.2:
-                print 'Case 2.3  Straight forward'  
-                wv.desiredWV_R = 0.1
-                wv.desiredWV_L = 0.1
-            else:
-                if heading_err_cross < 0:
-                    print 'Case 2.4.1  Turn right'
-                    wv.desiredWV_R = -0.1
-                    wv.desiredWV_L = 0.1
-                else:
-                    print 'Case 2.4.2  Turn left'
-                    wv.desiredWV_R = 0.1
-                    wv.desiredWV_L = -0.1
-                    
+
+
+            # New navigation policy:
+            # 2.1 if not a plan: generate rrt plan
+	    #		- path towards the current apriltag
+	    # 		- need spline returned, not just waypoints
+	    # 2.2 generate wheel velocities
+	    #  	        - use inverse kinematics formulas, and velocity and curvature formula on splines
+	    # 2.3 grab pose from kalman node and compare with plan
+	    # 2.4 Goal test, that is tag-dependent
+	    # 		- if satisfied, knock off tag from list
+
+      
             self.velcmd_pub.publish(wv)  
             
             rospy.sleep(0.01)
