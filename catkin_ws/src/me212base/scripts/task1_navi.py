@@ -104,10 +104,10 @@ class ApriltagNavigator():
 
 			# 2.2 generate wheel velocities
 	    	#  	        - use inverse kinematics formulas, and velocity and curvature formula on splines
-			v = const
+			v = 0.0  #const
 			k = curvature(spline, t)
-			r = radius of wheel
-			b = distance between wheels
+			r = 0.5 #radius of wheel
+			b = 1 #distance between wheels
 
 			
 			wv.desiredWV_L = (v/r)*(1-(k/b))
@@ -117,9 +117,9 @@ class ApriltagNavigator():
 
 			# 2.3 grab pose from kalman node and compare with plan
 	    	
-			robot_pose2d = kalman_filter()
-			if not pose_plan_compare():
-				spline = None
+			#robot_pose2d = kalman_filter()
+			#if not pose_plan_compare():
+			#	spline = None
 
 
 
@@ -128,7 +128,7 @@ class ApriltagNavigator():
 	    	#  	        - use inverse kinematics formulas, and velocity and curvature formula on splines
 	    	
 			if Goal_test(robot_pose2d):
-				tags.remove(tags[0])
+				del tags[0]
 				spline = None
 
 

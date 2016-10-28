@@ -161,9 +161,7 @@ def diffrad(a,b):
     return diff
 
 
-def curvature(x_param,y_param):
-	
-	t = Symbol('t')
+def curvature(x_param,y_param, t_val):
 	
 	x_prime = x_param.diff(t) 
 	y_prime = y_param.diff(t)
@@ -172,5 +170,7 @@ def curvature(x_param,y_param):
 
 	k = (x_prime*y_2prime - x_2prime*y_prime)/(x_prime**2 + y_prime**2)**1.5
 	
+	k = k.sub(t,t_val).evalf()
+
 	return k        
 
