@@ -1,6 +1,7 @@
 import rospy
 import tf
 import numpy as np
+from sympy import *
 import threading
 import serial
 import pdb
@@ -158,4 +159,18 @@ def diffrad(a,b):
     while diff > np.pi:
         diff -= 2*np.pi
     return diff
-        
+
+
+def curvature(x_param,y_param):
+	
+	t = Symbol('t')
+	
+	x_prime = x_param.diff(t) 
+	y_prime = y_param.diff(t)
+	x_2prime = x_prime.diff(t)
+	y_2prime = y_prime.diff(t)
+
+	k = (x_prime*y_2prime - x_2prime*y_prime)/(x_prime**2 + y_prime**2)**1.5
+	
+	return k        
+
