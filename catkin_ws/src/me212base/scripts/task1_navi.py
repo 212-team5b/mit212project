@@ -81,20 +81,58 @@ class ApriltagNavigator():
             # Call proper function to get obstacles (if there are any) and pose
 	    #     - will use kinect to check if obstacle (through distance sensor or rgb corner filter) and generate pose
            
+
+
+
+
             # 2. navigation policy
 
 
-            # New navigation policy:
-            # 2.1 if not a plan: generate rrt plan
-	    #		- path towards the current apriltag
-	    # 		- need spline returned, not just waypoints
-	    # 2.2 generate wheel velocities
-	    #  	        - use inverse kinematics formulas, and velocity and curvature formula on splines
-	    # 2.3 grab pose from kalman node and compare with plan
-	    # 2.4 Goal test, that is tag-dependent
-	    # 		- if satisfied, knock off tag from list
+            
+             
+			
 
-      
+			#Skeleton Code
+			
+		
+			# 2.1 if not a plan: generate rrt plan
+		    #		- path towards the current apriltag
+		    # 		- need spline returned, not just waypoints
+	    	if not is_plan:
+				spline = rrt(robot_pose2d, target_position2d, obstacles)
+		
+
+			# 2.2 generate wheel velocities
+	    	#  	        - use inverse kinematics formulas, and velocity and curvature formula on splines
+			v = const
+			k = curvature(spline, t)
+			r = radius of wheel
+			b = distance between wheels
+
+			
+			wv.desiredWV_L = (v/r)*(1-(k/b))
+			wv.desiredWV_R = (v/r)*(1+(k/b))	    	
+
+
+
+			# 2.3 grab pose from kalman node and compare with plan
+	    	
+			robot_pose2d = kalman_filter()
+			if not pose_plan_compare():
+				spline = None
+
+
+
+			# 2.4 Goal test, that is tag-dependent
+	    	#		- if satisfied, knock off tag from list
+	    	#  	        - use inverse kinematics formulas, and velocity and curvature formula on splines
+	    	
+			if Goal_test(robot_pose2d):
+				tags.remove(tags[0])
+				spline = None
+
+
+			      
             self.velcmd_pub.publish(wv)  
             
             rospy.sleep(0.01)
