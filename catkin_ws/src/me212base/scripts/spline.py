@@ -8,8 +8,9 @@ def spline(x,y):
 	out = interpolate.splev(unew, tck) #interpolate from the function
 	der = interpolate.splev(unew, tck, der = 1)
 	second_der = interpolate.splev(unew, tck, der = 2)
+	delta_l = (der[0]**2 + der[1]**2)**0.5
 	k = (der[0]*second_der[1] - der[0]*second_der[0])/((der[0]**2 + der[1]**2)**1.5)
-	return [k,out]
+	return [k,out,delta_l]
 
 if __name__ == '__main__':
 	t = np.arange(0, 1.1, .1) #parametrically-defined curve

@@ -10,10 +10,12 @@ import pdb
 import traceback
 import sys
 import tf.transformations as tfm
+from rrt import *
 
 from me212base.msg import WheelVelCmd
 from apriltags.msg import AprilTagDetections
 import helper
+import time
 
 class ApriltagNavigator():
     def __init__(self, constant_vel = True):
@@ -46,6 +48,8 @@ class ApriltagNavigator():
             wv = WheelVelCmd()
             self.velcmd_pub.publish(wv) 
             rospy.sleep(0.01) 
+    def distance(point):
+        return (point[0]**2 + point[1]**2)**0.5
         
     def navi_loop(self):
         ##
@@ -98,17 +102,28 @@ class ApriltagNavigator():
 			# 2.1 if not a plan: generate rrt plan
 		    #		- path towards the current apriltag
 		    # 		- need spline returned, not just waypoints
+            v = 0.1  #const
+            r = 0.5 #radius of wheel
+            b = 1 #distance between wheels
+
+            obstacleList = []
+            randArea = distance(target_position2d)
 	    	if not is_plan:
-				spline = rrt(robot_pose2d, target_position2d, obstacles)
-		
+                start = time.time()
+                path = path_create(robot_position2d, target_position2d, obstacleList, randArea)
+                curvature = path[0]
+            end = time.time()
+            delta_t = end - start
+            delta_v = path[2]
+            length_dv = delta_v[1] - delta_v[0]
+            delta_l = delta_t * length_dv
+            index = np.floor(v*delta_t/delta_l)
+            
+            k= curvature[index]
 
 			# 2.2 generate wheel velocities
 	    	#  	        - use inverse kinematics formulas, and velocity and curvature formula on splines
-			v = 0.0  #const
-			k = curvature(spline, t)
-			r = 0.5 #radius of wheel
-			b = 1 #distance between wheels
-
+			
 			
 			wv.desiredWV_L = (v/r)*(1-(k/b))
 			wv.desiredWV_R = (v/r)*(1+(k/b))	    	

@@ -260,9 +260,12 @@ def path_create(start,goal,obstacleList, randArea):
     x = map(lambda d: d[0], smoothedPath)
     y = map(lambda d: d[1], smoothedPath)
 
-    curvature = spline(x,y)[0]
-    out = spline(x,y)[1]
-    return (curvature, out, smoothedPath)
+    line = spline(x,y)
+    curvature = line[0]
+    out = line[1]
+    delta_l = line[2]
+
+    return (curvature, out, smoothedPath, delta_l)
 
 if __name__ == '__main__':
     import matplotlib.pyplot as plt
