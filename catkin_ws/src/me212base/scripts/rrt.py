@@ -1,12 +1,12 @@
 #!/usr/bin/python
-# -*- coding: utf-8 -*-
-u"""
-Path Planning Sample Code with Randamized Rapidly-Exploring Random Trees (RRT) 
+"""
+Path Planning with Randamized Rapidly-Exploring Random Trees (RRT)
 """
 
 import random
 import math
 import copy
+from spline import spline
 
 class RRT():
     u"""
@@ -14,7 +14,7 @@ class RRT():
     """
 
     def __init__(self, start, goal, obstacleList,randArea,expandDis=1.0,goalSampleRate=5,maxIter=500):
-        u"""
+        """
         Setting Parameter
 
         start:Start Position [x,y]
@@ -32,7 +32,7 @@ class RRT():
         self.maxIter = maxIter
 
     def Planning(self,animation=True):
-        u"""
+        """
         Pathplanning 
 
         animation: flag for animation on or off
@@ -127,7 +127,7 @@ class RRT():
         return True  # safe
 
 class Node():
-    u"""
+    """
     RRT Node
     """
 
@@ -245,19 +245,9 @@ def PathSmoothing(path, maxIter, obstacleList):
             li_uniq.append(x)
     return li_uniq
 
+"""From the result of RRT, this function makes a spline and returns curvatures at each step"""
 
-if __name__ == '__main__':
-    import matplotlib.pyplot as plt
-    #====Search Path with RRT====
-    # Parameter
-    obstacleList = [
-        (5, 5, 1),
-        (3, 6, 2),
-        (3, 8, 2),
-        (3, 10, 2),
-        (7, 5, 2),
-        (9, 5, 2)
-    ]  # [x,y,size]
+def path_create(obstacleList):
     rrt=RRT(start=[0,0],goal=[5,10],randArea=[-2,15],obstacleList=obstacleList)
     path=rrt.Planning(animation=False)
 
@@ -267,7 +257,37 @@ if __name__ == '__main__':
     #Path smoothing
     maxIter=1000
     smoothedPath = PathSmoothing(path, maxIter, obstacleList)
-    
+    x = map(lambda d: d[0], smoothedPath)
+    y = map(lambda d: d[1], smoothedPath)
+
+    curvature = spline(x,y)[0]
+    out = spline(x,y)[1]
+    return (curvature, out, smoothedPath)
+
+if __name__ == '__main__':
+    import matplotlib.pyplot as plt
+    #====Search Path with RRT====
+    # Parameter
+    obstacleList = [
+        (0,6,2),
+        (5, 5, 1),
+        (3, 6, 2),
+        (3, 8, 2),
+        (3, 10, 2),
+        (7, 5, 2),
+        (9, 5, 2)
+    ]  # [x,y,size] Set radius bigger than actual values
+    while(1):
+        try:
+            path = path_create(obstacleList)
+        except SystemError:
+            print "SystemError"
+        else:
+            break
+    out = path[1]
+    smoothedPath = path[2]
+    print path[0] #curvature
+    plt.plot(out[0], out[1],'-y')
     plt.plot([x for (x,y) in smoothedPath], [y for (x,y) in smoothedPath],'-b')
     plt.grid(True)
     plt.pause(0.01)  # Need for Mac
