@@ -247,8 +247,8 @@ def PathSmoothing(path, maxIter, obstacleList):
 
 """From the result of RRT, this function makes a spline and returns curvatures at each step"""
 
-def path_create(obstacleList):
-    rrt=RRT(start=[0,0],goal=[5,10],randArea=[-2,15],obstacleList=obstacleList)
+def path_create(start,goal,obstacleList, randArea):
+    rrt=RRT(start, goal, obstacleList, randArea)
     path=rrt.Planning(animation=False)
 
     # Draw final path
@@ -277,9 +277,12 @@ if __name__ == '__main__':
         (7, 5, 2),
         (9, 5, 2)
     ]  # [x,y,size] Set radius bigger than actual values
+    start=[0,0]
+    goal=[5,10]
+    randArea=[-2,15]
     while(1):
         try:
-            path = path_create(obstacleList)
+            path = path_create(start, goal, obstacleList, randArea)
         except SystemError:
             print "SystemError"
         else:
