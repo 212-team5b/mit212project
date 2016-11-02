@@ -103,8 +103,8 @@ class ApriltagNavigator():
 		    #		- path towards the current apriltag
 		    # 		- need spline returned, not just waypoints
             v = 0.1  #const
-            r = 0.5 #radius of wheel
-            b = 1 #distance between wheels
+            r = 0.035 #radius of wheel
+            b = 0.23 #distance between wheels
 
             obstacleList = []
             randArea = distance(target_position2d)
