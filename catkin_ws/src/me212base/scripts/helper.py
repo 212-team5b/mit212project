@@ -1,7 +1,6 @@
 import rospy
 import tf
 import numpy as np
-from sympy import *
 import threading
 import serial
 import pdb
@@ -12,7 +11,7 @@ import tf.transformations as tfm
 from visualization_msgs.msg import Marker
 import geometry_msgs.msg
 from geometry_msgs.msg import Point, Pose
-from pr_apriltags.msg import AprilTagDetections
+from apriltags.msg import AprilTagDetections
 import helper
 
 nTfRetry = 1
@@ -159,18 +158,4 @@ def diffrad(a,b):
     while diff > np.pi:
         diff -= 2*np.pi
     return diff
-
-
-def curvature(x_param,y_param, t_val):
-	
-	x_prime = x_param.diff(t) 
-	y_prime = y_param.diff(t)
-	x_2prime = x_prime.diff(t)
-	y_2prime = y_prime.diff(t)
-
-	k = (x_prime*y_2prime - x_2prime*y_prime)/(x_prime**2 + y_prime**2)**1.5
-	
-	k = k.sub(t,t_val).evalf()
-
-	return k        
 

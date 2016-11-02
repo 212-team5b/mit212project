@@ -61,6 +61,7 @@ class ApriltagNavigator():
         ## 
         arrived = False
         arrived_position = False
+        is_plan = False
         
         while not rospy.is_shutdown() :
             
@@ -108,7 +109,8 @@ class ApriltagNavigator():
 
             obstacleList = []
             randArea = distance(target_position2d)
-	    	if not is_plan:
+            if not is_plan:
+                is_plan = True
                 start = time.time()
                 path = path_create(robot_position2d, target_position2d, obstacleList, randArea)
                 curvature = path[0]
@@ -118,15 +120,11 @@ class ApriltagNavigator():
             length_dv = delta_v[1] - delta_v[0]
             delta_l = delta_t * length_dv
             index = np.floor(v*delta_t/delta_l)
-            
+
             k= curvature[index]
 
-			# 2.2 generate wheel velocities
-	    	#  	        - use inverse kinematics formulas, and velocity and curvature formula on splines
-			
-			
-			wv.desiredWV_L = (v/r)*(1-(k/b))
-			wv.desiredWV_R = (v/r)*(1+(k/b))	    	
+            wv.desiredWV_L = (v/r)*(1-(k/b))
+            wv.desiredWV_R = (v/r)*(1+(k/b))	    	
 
 
 
@@ -138,16 +136,17 @@ class ApriltagNavigator():
 
 
 
-			# 2.4 Goal test, that is tag-dependent
-	    	#		- if satisfied, knock off tag from list
-	    	#  	        - use inverse kinematics formulas, and velocity and curvature formula on splines
-	    	
-			if Goal_test(robot_pose2d):
-				del tags[0]
-				spline = None
+            # 2.4 Goal test, that is tag-dependent
+            #		- if satisfied, knock off tag from list
+            #  	        - use inverse kinematics formulas, and velocity and curvature formula on splines
+
+            if Goal_test(robot_pose2d):
+                is_plan = False
+                del tags[0]
+                k = None
 
 
-			      
+                  
             self.velcmd_pub.publish(wv)  
             
             rospy.sleep(0.01)
