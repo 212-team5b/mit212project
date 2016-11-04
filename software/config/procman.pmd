@@ -4,13 +4,8 @@ cmd "0-roscore" {
     host = "localhost";
 }
 
-cmd "0.5-frames" {
-    exec = "roslaunch me212base frames.launch";
-    host = "localhost";
-}
-
 cmd "1-robot" {
-    exec = "roslaunch me212base me212base.launch";
+    exec = "roslaunch me212bot me212bot.launch";
     host = "localhost";
 }
 
@@ -32,32 +27,32 @@ cmd "1-robot-arm-real-joint-state-publisher" {
 }
 
 cmd "2-rviz" {
-    exec = "roslaunch me212base viz.launch";
-    host = "localhost";
-}
-
-cmd "2.1-kinect" {
-    exec = "roslaunch freenect_launch freenect.launch depth_registration:=true";
-    host = "localhost";
-}
-
-cmd "2.2-apriltag" {
-    exec = "roslaunch apriltags apriltags.launch";
-    host = "localhost";
-}
-
-cmd "2.4-navigation" {
-    exec = "rosrun me212bot apriltag_navi.py";
-    host = "localhost";
-}
-
-cmd "2.5-navigation-task1" {
-    exec = "rosrun me212base task1_navi.py";
+    exec = "roslaunch me212bot viz.launch";
     host = "localhost";
 }
 
 cmd "3-tf" {
-    exec = "rosrun tf static_transform_publisher 0 0 0 0 0 0 /map /robot_base 100";
+    exec = "rosrun tf static_transform_publisher 0.6 0.3 0 1.570796 0 0 /map /robot_base 100";
+    host = "localhost";
+}
+
+cmd "3.1-apriltag_tf" {
+    exec = "roslaunch apriltags tag_tf.launch";
+    host = "localhost";
+}
+
+cmd "3.2-apriltags" {
+    exec = "roslaunch apriltags apriltags.launch";
+    host = "localhost";
+}
+
+cmd "3.4-kinect" {
+    exec = "roslaunch freenect_launch freenect.launch depth_registration:=true";
+    host = "localhost";
+}
+
+cmd "3.5-kinect-calibrate" {
+    exec = "rosrun camera_calibration cameracalibrator.py --size 8x6 --square 0.025 image:=/camera/rgb/image_color";
     host = "localhost";
 }
 
@@ -81,40 +76,7 @@ cmd "4.4-planning-rrt" {
     host = "localhost";
 }
 
-script "practice-rviz" {
-    start cmd "0-roscore";
-    wait ms 1000;
-    start cmd "0.5-frames";
-    wait ms 500;
-    start cmd "2-rviz";
-    start cmd "2.1-kinect";
-    start cmd "2.2-apriltag";
-}
 
-script "run-navigate" {
-    start cmd "0-roscore";
-    wait ms 1000;
-    start cmd "0.5-frames";
-    wait ms 500;
-    start cmd "2-rviz";
-    start cmd "2.1-kinect";
-    start cmd "2.2-apriltag";
-    start cmd "2.3-robot";
-}
-
-
-script "run-navigate-task1" {
-    start cmd "0-roscore";
-    wait ms 1000;
-    start cmd "0.5-frames";
-    wait ms 500;
-    start cmd "2-rviz";
-    start cmd "2.1-kinect";
-    start cmd "2.2-apriltag";
-    start cmd "1-robot";
-    wait ms 500;
-    start cmd "2.5-navigation-task1";
-}
 
 script "run-virtual" {
     start cmd "0-roscore";

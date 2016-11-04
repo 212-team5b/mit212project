@@ -51,7 +51,6 @@ class Arduino():
                 theta = float(splitData[2]);
                 hz    = 1.0 / (rospy.Time.now().to_sec() - self.prevtime.to_sec())
                 
-                cnt += 1
                 print 'x=', x, ' y=', y, ' theta =', theta, ' hz =', hz; 
                     
                 self.prevtime = rospy.Time.now()
@@ -64,7 +63,7 @@ class Arduino():
 
 
 def main():
-    rospy.init_node('me212bot', anonymous=True)
+    rospy.init_node('me212base_node', anonymous=True)
     arduino = Arduino()
     rospy.spin()
     

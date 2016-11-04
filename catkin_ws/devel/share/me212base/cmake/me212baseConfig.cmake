@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(me212base_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/robot/mit212project/catkin_ws/devel/include " STREQUAL " ")
+if(NOT " " STREQUAL " ")
   set(me212base_INCLUDE_DIRS "")
-  set(_include_dirs "/home/robot/mit212project/catkin_ws/devel/include")
+  set(_include_dirs "")
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
       set(include ${idir})
@@ -122,7 +122,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/robot/mit212project/catkin_ws/devel/lib;/home/robot/mit212project/catkin_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/robot/mit212project/catkin_ws/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -145,7 +145,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(me212base_EXPORTED_TARGETS "me212base_generate_messages_cpp;me212base_generate_messages_eus;me212base_generate_messages_lisp;me212base_generate_messages_nodejs;me212base_generate_messages_py")
+set(me212base_EXPORTED_TARGETS "")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${me212base_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -182,7 +182,7 @@ foreach(depend ${depends})
   list(APPEND me212base_EXPORTED_TARGETS ${${me212base_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "me212base-msg-extras.cmake")
+set(pkg_cfg_extras "")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${me212base_DIR}/${extra})
