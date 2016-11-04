@@ -51,6 +51,10 @@ cmd "2.4-navigation" {
     host = "localhost";
 }
 
+cmd "2.5-navigation-task1" {
+    exec = "rosrun me212base task1_navi.py";
+    host = "localhost";
+}
 
 cmd "3-tf" {
     exec = "rosrun tf static_transform_publisher 0 0 0 0 0 0 /map /robot_base 100";
@@ -96,6 +100,20 @@ script "run-navigate" {
     start cmd "2.1-kinect";
     start cmd "2.2-apriltag";
     start cmd "2.3-robot";
+}
+
+
+script "run-navigate-task1" {
+    start cmd "0-roscore";
+    wait ms 1000;
+    start cmd "0.5-frames";
+    wait ms 500;
+    start cmd "2-rviz";
+    start cmd "2.1-kinect";
+    start cmd "2.2-apriltag";
+    start cmd "1-robot";
+    wait ms 500;
+    start cmd "2.5-navigation-task1";
 }
 
 script "run-virtual" {

@@ -41,7 +41,7 @@ class ApriltagNavigator():
             if detection.id == 0: 
                 pose_tag_base = helper.poseTransform(helper.pose2list(detection.pose),  homeFrame = '/camera', targetFrame = '/base_link', listener = self.listener)
                 pose_base_map = helper.poseTransform(helper.invPoseList(pose_tag_base), homeFrame = '/apriltag', targetFrame = '/map', listener = self.listener)
-                pubFrame(self.br, pose = pose_base_map, frame_id = '/base_link', parent_frame_id = '/map', npub = 1)
+                helper.pubFrame(self.br, pose = pose_base_map, frame_id = '/base_link', parent_frame_id = '/map', npub = 1)
 
     def constant_vel_loop(self):
         while not rospy.is_shutdown() :
@@ -52,6 +52,7 @@ class ApriltagNavigator():
         return (point[0]**2 + point[1]**2)**0.5
         
     def navi_loop(self):
+        print "in navi_loop"
         ##
         target_pose2d = [0.25, 0, np.pi]
         
@@ -124,9 +125,8 @@ class ApriltagNavigator():
             k= curvature[index]
 
             wv.desiredWV_L = (v/r)*(1-(k/b))
-            wv.desiredWV_R = (v/r)*(1+(k/b))	    	
-
-
+            wv.desiredWV_R = (v/r)*(1+(k/b))
+            print "working"
 
 			# 2.3 grab pose from kalman node and compare with plan
 	    	
@@ -153,6 +153,7 @@ class ApriltagNavigator():
     
 def main():
     rospy.init_node('me212_robot', anonymous=True)
+    print "main"
     april_navi = ApriltagNavigator()
     rospy.spin()
 
