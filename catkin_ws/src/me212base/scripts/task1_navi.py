@@ -71,6 +71,9 @@ class ApriltagNavigator():
             # 1. get robot pose
             robot_pose3d = helper.lookupTransformList('/map', '/base_link', self.listener)
             
+            if robot_pose3d:
+                print "Got Pose"
+            
             if robot_pose3d is None: #rotate in place maybe??
                 print '1. Tag not in view, Stop'
                 wv.desiredWV_R = 0  # right, left

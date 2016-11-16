@@ -4,6 +4,11 @@ cmd "0-roscore" {
     host = "localhost";
 }
 
+cmd "0.5-frames" {
+    exec = "roslaunch me212base frames.launch";
+    host = "localhost";
+}
+
 cmd "1-robot" {
     exec = "roslaunch me212bot me212bot.launch";
     host = "localhost";
@@ -76,6 +81,57 @@ cmd "4.4-planning-rrt" {
     host = "localhost";
 }
 
+cmd "5-robot"{
+    exec = "rosrun me212base me212base_node.py";
+    host = "localhost";
+}
+
+cmd "6-navigation" {
+    exec = "rosrun me212bot apriltag_navi.py";
+    host = "localhost";
+}
+
+cmd "6-navigation-task1" {
+    exec = "rosrun me212base task1_navi.py";
+    host = "localhost";
+}
+
+script "practice-rviz" {
+    start cmd "0-roscore";
+    wait ms 1000;
+    start cmd "0.5-frames";
+    wait ms 500;
+    start cmd "2-rviz";
+    start cmd "3.4-kinect";
+    start cmd "3.2-apriltag";
+}
+
+script "run-navigate" {
+    start cmd "0-roscore";
+    wait ms 1000;
+    start cmd "0.5-frames";
+    wait ms 500;
+    start cmd "2-rviz";
+    start cmd "3.4-kinect";
+    start cmd "3.2-apriltags";
+    start cmd "5-robot";
+    wait ms 500;
+    start cmd "6-navigation";
+}
+
+
+script "run-navigate-task1" {
+    start cmd "0-roscore";
+    wait ms 1000;
+    start cmd "0.5-frames";
+    wait ms 500;
+    start cmd "2-rviz";
+    start cmd "3.4-kinect";
+    start cmd "3.2-apriltags";
+    start cmd "5-robot";
+    wait ms 500;
+    start cmd "6-navigation-task1";
+}
 
 
 script "run-virtual" {
