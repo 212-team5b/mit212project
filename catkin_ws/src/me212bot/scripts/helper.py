@@ -12,7 +12,6 @@ from visualization_msgs.msg import Marker
 import geometry_msgs.msg
 from geometry_msgs.msg import Point, Pose
 from apriltags.msg import AprilTagDetections
-import helper
 
 nTfRetry = 1
 retryTime = 0.05
@@ -59,6 +58,8 @@ def lookupTransformList(homeFrame, targetFrame, listener):
         try:
             t = rospy.Time(0)
             (trans,rot) = listener.lookupTransform(homeFrame, targetFrame, t)
+            if listener.getLatestCommonTime(homeFrame, targetFrame) < (rospy.Time.now() - rospy.Duration(1)):
+                return None
             return list(trans) + list(rot)
         except: #(tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException):
             print '[lookupTransform] failed to transform'
