@@ -17,8 +17,16 @@ from apriltags.msg import AprilTagDetections
 import helper
 import time
 
+def distance(point1,point2):
+    return ((point1[0]-point2[0])**2 + (point1[1]-point2[1])**2)**0.5
+        
+def Goal_test(robot_pose2d,tag_pose2d):
+    if abs(distance(robot_pose2d,tag_pose2d)) < 0.1:
+        return True
+    else: return False
+
 class ApriltagNavigator():
-    def __init__(self, constant_vel = True):
+    def __init__(self, constant_vel = False):
         self.listener = tf.TransformListener()
         self.br = tf.TransformBroadcaster()
         self.apriltag_sub = rospy.Subscriber("/apriltags/detections", AprilTagDetections, self.apriltag_callback, queue_size = 1)
@@ -50,13 +58,25 @@ class ApriltagNavigator():
             wv = WheelVelCmd()
             self.velcmd_pub.publish(wv) 
             rospy.sleep(0.01) 
-    def distance(point):
-        return (point[0]**2 + point[1]**2)**0.5
+    
         
     def navi_loop(self):
         ##
-        target_pose2d = [0.25, 0, np.pi]
+        tag_locations2d = [[.0],[],[],[],[],[],[],[],[],[]]
         
+        
+     "tag0"args="0.035 0.86 0.545 1.57079633 0 1.57079633 map apriltag0 100" />
+    "tag1""0.035 1.78 0.54 1.57079633 0 1.57079633 map apriltag1 100" />
+    "tag2" args="0.2 1.94 0.55 0 0 1.57079633 map apriltag2 100" />
+    "tag3"args="0.41 2.19 0.55 1.57079633 0 1.57079633 map apriltag3 100" />
+    "tag4"args="1.29 2.40 0.54 0 0 1.57079633 map apriltag4 100" />
+    "tag5"args="2.44 2.40 0.55 0 0 1.57079633 map apriltag5 100" />
+    "tag6"args="3.6225 1.795 0.54 -1.57079633 0 1.57079633 map apriltag6 100" />
+    "tag7"args="3.6225 0.855 0.545 -1.57079633 0 1.57079633 map apriltag7 100" />
+    "tag8"args="3.04 0.46 0.55 3.1415926 0 1.57079633 map apriltag8 100" />
+    "tag9"args="1.83 0.46 0.55 3.1415926 0 1.57079633 map apriltag9 100" />
+    "tag10"args="1.60 0.26 0.55 -1.57079633 0 1.57079633 map apriltag10 100" />
+
         ##
         wv = WheelVelCmd()
         
@@ -65,14 +85,13 @@ class ApriltagNavigator():
         arrived_position = False
         is_plan = False
         
+        
         while not rospy.is_shutdown() :
             
             ## 
             # 1. get robot pose
             robot_pose3d = helper.lookupTransformList('/map', '/base_link', self.listener)
-            
-            if robot_pose3d:
-                print "Got Pose"
+            print "Got Pose: ", robot_pose3d
             
             if robot_pose3d is None: #rotate in place maybe??
                 print '1. Tag not in view, Stop'
@@ -87,42 +106,40 @@ class ApriltagNavigator():
             robot_yaw = tfm.euler_from_quaternion(robot_pose3d[3:7]) [2]
             robot_pose2d = robot_position2d + [robot_yaw]
             
+            print "2D Poses: ", robot_position2d
 
             # Call proper function to get obstacles (if there are any) and pose
-	    #     - will use kinect to check if obstacle (through distance sensor or rgb corner filter) and generate pose
-           
-
-
-
+            #  - will use kinect to check if obstacle (through distance sensor or rgb corner filter) and generate pose
+            # obstacleList = checkObstacles()
 
             # 2. navigation policy
 
-
-            
-             
-			
-
-			#Skeleton Code
-			
-		
 			# 2.1 if not a plan: generate rrt plan
 		    #		- path towards the current apriltag
 		    # 		- need spline returned, not just waypoints
-            v = 0.1  #const
+            v = 0.1   #const
             r = 0.035 #radius of wheel
-            b = 0.23 #distance between wheels
+            b = 0.23  #distance between wheels
 
             obstacleList = []
-            randArea = distance(target_position2d)
+            xdis = robot_position2d[0]-target_position2d[0]
+            print "Got Distance: ", xdis
+        
+            randArea = [(robot_position2d[0]-1.5*xdis)/100, (robot_position2d[0]+1.5*xdis)/100]            
             if not is_plan:
                 is_plan = True
                 start = time.time()
                 path = path_create(robot_position2d, target_position2d, obstacleList, randArea)
+                # Need to implement dynamic range for plotting
+                # Need to implement handling for straight line case
                 curvature = path[0]
             end = time.time()
             delta_t = end - start
             delta_v = path[2]
-            length_dv = delta_v[1] - delta_v[0]
+            
+            print "Delta V", delta_v
+            
+            length_dv = distance(delta_v[1], delta_v[0])
             delta_l = delta_t * length_dv
             index = np.floor(v*delta_t/delta_l)
 
@@ -138,18 +155,14 @@ class ApriltagNavigator():
 			#if not pose_plan_compare():
 			#	spline = None
 
-
-
             # 2.4 Goal test, that is tag-dependent
             #		- if satisfied, knock off tag from list
             #  	        - use inverse kinematics formulas, and velocity and curvature formula on splines
 
-            if Goal_test(robot_pose2d):
+            if Goal_test(robot_pose2d, tags[0]):
                 is_plan = False
                 del tags[0]
                 k = None
-
-
                   
             self.velcmd_pub.publish(wv)  
             
@@ -157,7 +170,9 @@ class ApriltagNavigator():
     
 def main():
     rospy.init_node('me212_robot', anonymous=True)
+    print "Start Navigation"
     april_navi = ApriltagNavigator()
+    print "End Navigation"
     rospy.spin()
 
 if __name__=='__main__':

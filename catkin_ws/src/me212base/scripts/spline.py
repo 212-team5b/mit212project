@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 from scipy import interpolate
 
 def spline(x,y):
+    # if len(x) == 2: # Ryoya, need to take care of Straight line case
+    #     return [0,0,np.sqrt((x[0]-x[1])**2 + (y[0]-y[1])**2)]
 	tck, u = interpolate.splprep([x,y], s=0) # generate a spline function
 	unew = np.arange(0, 1.01, 0.01)
 	out = interpolate.splev(unew, tck) #interpolate from the function

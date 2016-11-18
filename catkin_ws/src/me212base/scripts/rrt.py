@@ -13,7 +13,7 @@ class RRT():
     Class for RRT Planning
     """
 
-    def __init__(self, start, goal, obstacleList,randArea,expandDis=1.0,goalSampleRate=5,maxIter=500):
+    def __init__(self, start, goal, obstacleList,randArea,expandDis=.5,goalSampleRate=5,maxIter=500):
         """
         Setting Parameter
 
@@ -25,6 +25,7 @@ class RRT():
         """
         self.start=Node(start[0],start[1])
         self.end=Node(goal[0],goal[1])
+        self.obstacleList = obstacleList
         self.minrand = randArea[0]
         self.maxrand = randArea[1]
         self.expandDis = expandDis
@@ -59,7 +60,7 @@ class RRT():
             newNode.y += self.expandDis * math.sin(theta)
             newNode.parent = nind
 
-            if not self.__CollisionCheck(newNode, obstacleList):
+            if not self.__CollisionCheck(newNode):
                 continue
 
             self.nodeList.append(newNode)
@@ -94,12 +95,12 @@ class RRT():
         for node in self.nodeList:
             if node.parent is not None:
                 plt.plot([node.x, self.nodeList[node.parent].x], [node.y, self.nodeList[node.parent].y], "-g")
-        for (x,y,size) in obstacleList:
+        for (x,y,size) in self.obstacleList:
             self.PlotCircle(x,y,size)
 
         plt.plot(self.start.x, self.start.y, "xr")
         plt.plot(self.end.x, self.end.y, "xr")
-        plt.axis([-2, 15, -2, 15])
+        plt.axis([self.minrand, self.maxrand, self.minrand, self.maxrand])
         plt.grid(True)
         plt.pause(0.01)
 
@@ -115,9 +116,9 @@ class RRT():
         minind = dlist.index(min(dlist))
         return minind
 
-    def __CollisionCheck(self, node, obstacleList):
+    def __CollisionCheck(self, node): #obstacleList):
 
-        for (ox, oy, size) in obstacleList:
+        for (ox, oy, size) in self.obstacleList:
             dx = ox - node.x
             dy = oy - node.y
             d = math.sqrt(dx * dx + dy * dy)
@@ -248,8 +249,9 @@ def PathSmoothing(path, maxIter, obstacleList):
 """From the result of RRT, this function makes a spline and returns curvatures at each step"""
 
 def path_create(start,goal,obstacleList, randArea):
+    import matplotlib.pyplot as plt
     rrt=RRT(start, goal, obstacleList, randArea)
-    path=rrt.Planning(animation=False)
+    path=rrt.Planning(animation=True)
 
     # Draw final path
     rrt.DrawGraph()
