@@ -2,7 +2,7 @@
 
 message(STATUS "dynamixel_msgs: 3 messages, 0 services")
 
-set(MSG_I_FLAGS "-Idynamixel_msgs:/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Idynamixel_msgs:/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,19 +17,19 @@ add_custom_target(dynamixel_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg" NAME_WE)
+get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg" NAME_WE)
 add_custom_target(_dynamixel_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_msgs" "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg" "dynamixel_msgs/MotorState"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_msgs" "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg" NAME_WE)
+get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg" NAME_WE)
 add_custom_target(_dynamixel_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_msgs" "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_msgs" "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg" ""
 )
 
-get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg" NAME_WE)
+get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg" NAME_WE)
 add_custom_target(_dynamixel_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_msgs" "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dynamixel_msgs" "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg" "dynamixel_msgs/MotorState"
 )
 
 #
@@ -39,21 +39,21 @@ add_custom_target(_dynamixel_msgs_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(dynamixel_msgs
-  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg"
-  "${MSG_I_FLAGS}"
-  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dynamixel_msgs
-)
-_generate_msg_cpp(dynamixel_msgs
-  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg"
+  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dynamixel_msgs
 )
 _generate_msg_cpp(dynamixel_msgs
-  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg"
+  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dynamixel_msgs
+)
+_generate_msg_cpp(dynamixel_msgs
+  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg"
+  "${MSG_I_FLAGS}"
+  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dynamixel_msgs
 )
 
@@ -71,11 +71,11 @@ add_custom_target(dynamixel_msgs_generate_messages_cpp
 add_dependencies(dynamixel_msgs_generate_messages dynamixel_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg" NAME_WE)
+get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg" NAME_WE)
 add_dependencies(dynamixel_msgs_generate_messages_cpp _dynamixel_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg" NAME_WE)
+get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg" NAME_WE)
 add_dependencies(dynamixel_msgs_generate_messages_cpp _dynamixel_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg" NAME_WE)
+get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg" NAME_WE)
 add_dependencies(dynamixel_msgs_generate_messages_cpp _dynamixel_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -88,21 +88,21 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS dynamixel_msgs_generate_messages_cp
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(dynamixel_msgs
-  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg"
-  "${MSG_I_FLAGS}"
-  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dynamixel_msgs
-)
-_generate_msg_eus(dynamixel_msgs
-  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg"
+  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dynamixel_msgs
 )
 _generate_msg_eus(dynamixel_msgs
-  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg"
+  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dynamixel_msgs
+)
+_generate_msg_eus(dynamixel_msgs
+  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg"
+  "${MSG_I_FLAGS}"
+  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dynamixel_msgs
 )
 
@@ -120,11 +120,11 @@ add_custom_target(dynamixel_msgs_generate_messages_eus
 add_dependencies(dynamixel_msgs_generate_messages dynamixel_msgs_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg" NAME_WE)
+get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg" NAME_WE)
 add_dependencies(dynamixel_msgs_generate_messages_eus _dynamixel_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg" NAME_WE)
+get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg" NAME_WE)
 add_dependencies(dynamixel_msgs_generate_messages_eus _dynamixel_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg" NAME_WE)
+get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg" NAME_WE)
 add_dependencies(dynamixel_msgs_generate_messages_eus _dynamixel_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -137,21 +137,21 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS dynamixel_msgs_generate_messages_eu
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(dynamixel_msgs
-  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg"
-  "${MSG_I_FLAGS}"
-  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dynamixel_msgs
-)
-_generate_msg_lisp(dynamixel_msgs
-  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg"
+  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dynamixel_msgs
 )
 _generate_msg_lisp(dynamixel_msgs
-  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg"
+  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dynamixel_msgs
+)
+_generate_msg_lisp(dynamixel_msgs
+  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg"
+  "${MSG_I_FLAGS}"
+  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dynamixel_msgs
 )
 
@@ -169,11 +169,11 @@ add_custom_target(dynamixel_msgs_generate_messages_lisp
 add_dependencies(dynamixel_msgs_generate_messages dynamixel_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg" NAME_WE)
+get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg" NAME_WE)
 add_dependencies(dynamixel_msgs_generate_messages_lisp _dynamixel_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg" NAME_WE)
+get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg" NAME_WE)
 add_dependencies(dynamixel_msgs_generate_messages_lisp _dynamixel_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg" NAME_WE)
+get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg" NAME_WE)
 add_dependencies(dynamixel_msgs_generate_messages_lisp _dynamixel_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -186,21 +186,21 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS dynamixel_msgs_generate_messages_li
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(dynamixel_msgs
-  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg"
-  "${MSG_I_FLAGS}"
-  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dynamixel_msgs
-)
-_generate_msg_nodejs(dynamixel_msgs
-  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg"
+  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dynamixel_msgs
 )
 _generate_msg_nodejs(dynamixel_msgs
-  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg"
+  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dynamixel_msgs
+)
+_generate_msg_nodejs(dynamixel_msgs
+  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg"
+  "${MSG_I_FLAGS}"
+  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dynamixel_msgs
 )
 
@@ -218,11 +218,11 @@ add_custom_target(dynamixel_msgs_generate_messages_nodejs
 add_dependencies(dynamixel_msgs_generate_messages dynamixel_msgs_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg" NAME_WE)
+get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg" NAME_WE)
 add_dependencies(dynamixel_msgs_generate_messages_nodejs _dynamixel_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg" NAME_WE)
+get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg" NAME_WE)
 add_dependencies(dynamixel_msgs_generate_messages_nodejs _dynamixel_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg" NAME_WE)
+get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg" NAME_WE)
 add_dependencies(dynamixel_msgs_generate_messages_nodejs _dynamixel_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -235,21 +235,21 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS dynamixel_msgs_generate_messages_no
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(dynamixel_msgs
-  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg"
-  "${MSG_I_FLAGS}"
-  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dynamixel_msgs
-)
-_generate_msg_py(dynamixel_msgs
-  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg"
+  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dynamixel_msgs
 )
 _generate_msg_py(dynamixel_msgs
-  "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg"
+  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dynamixel_msgs
+)
+_generate_msg_py(dynamixel_msgs
+  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg"
+  "${MSG_I_FLAGS}"
+  "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dynamixel_msgs
 )
 
@@ -267,11 +267,11 @@ add_custom_target(dynamixel_msgs_generate_messages_py
 add_dependencies(dynamixel_msgs_generate_messages dynamixel_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg" NAME_WE)
+get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg" NAME_WE)
 add_dependencies(dynamixel_msgs_generate_messages_py _dynamixel_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/JointState.msg" NAME_WE)
+get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg" NAME_WE)
 add_dependencies(dynamixel_msgs_generate_messages_py _dynamixel_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorState.msg" NAME_WE)
+get_filename_component(_filename "/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/msg/MotorStateList.msg" NAME_WE)
 add_dependencies(dynamixel_msgs_generate_messages_py _dynamixel_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

@@ -1,12 +1,12 @@
 
 "use strict";
 
+let MotorStateList = require('./MotorStateList.js');
 let MotorState = require('./MotorState.js');
 let JointState = require('./JointState.js');
-let MotorStateList = require('./MotorStateList.js');
 
 module.exports = {
+  MotorStateList: MotorStateList,
   MotorState: MotorState,
   JointState: JointState,
-  MotorStateList: MotorStateList,
 };

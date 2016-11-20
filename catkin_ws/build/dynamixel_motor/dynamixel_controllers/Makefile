@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luke/catkin_ws/mit212project/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/robot/mit212project/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luke/catkin_ws/mit212project/catkin_ws/build
+CMAKE_BINARY_DIR = /home/robot/mit212project/catkin_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles /home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers/CMakeFiles/progress.marks
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles 0
+	cd /home/robot/mit212project/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles /home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_controllers/CMakeFiles/progress.marks
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/mit212project/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/clean
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,157 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/preinstall
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/preinstall
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/robot/mit212project/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/rule:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/rule
-.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/rule
-
-# Convenience name for target.
-_dynamixel_controllers_generate_messages_check_deps_StopController: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/rule
-
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_StopController
-
-# fast build rule for target.
-_dynamixel_controllers_generate_messages_check_deps_StopController/fast:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/build
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_StopController/fast
-
-# Convenience name for target.
-dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/rule:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/rule
-.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/rule
-
-# Convenience name for target.
-_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/rule
-
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch
-
-# fast build rule for target.
-_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch/fast:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/build
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch/fast
-
-# Convenience name for target.
-dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/rule:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/rule
-.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/rule
-
-# Convenience name for target.
-_dynamixel_controllers_generate_messages_check_deps_SetSpeed: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/rule
-
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetSpeed
-
-# fast build rule for target.
-_dynamixel_controllers_generate_messages_check_deps_SetSpeed/fast:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/build
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetSpeed/fast
-
-# Convenience name for target.
-dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/rule:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/rule
-.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/rule
-
-# Convenience name for target.
-_dynamixel_controllers_generate_messages_check_deps_TorqueEnable: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/rule
-
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_TorqueEnable
-
-# fast build rule for target.
-_dynamixel_controllers_generate_messages_check_deps_TorqueEnable/fast:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/build
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_TorqueEnable/fast
-
-# Convenience name for target.
-dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/rule:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/rule
-.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/rule
-
-# Convenience name for target.
-_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/rule
-
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin
-
-# fast build rule for target.
-_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin/fast:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/build
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin/fast
-
-# Convenience name for target.
-dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/rule:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/rule
-.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/rule
-
-# Convenience name for target.
-_dynamixel_controllers_generate_messages_check_deps_RestartController: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/rule
-
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_RestartController
-
-# fast build rule for target.
-_dynamixel_controllers_generate_messages_check_deps_RestartController/fast:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/build
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_RestartController/fast
-
-# Convenience name for target.
-dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/rule:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/rule
-.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/rule
-
-# Convenience name for target.
-dynamixel_controllers_generate_messages: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/rule
-
-.PHONY : dynamixel_controllers_generate_messages
-
-# fast build rule for target.
-dynamixel_controllers_generate_messages/fast:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/build
-.PHONY : dynamixel_controllers_generate_messages/fast
-
-# Convenience name for target.
-dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/rule:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/rule
-.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/rule
-
-# Convenience name for target.
-_dynamixel_controllers_generate_messages_check_deps_StartController: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/rule
-
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_StartController
-
-# fast build rule for target.
-_dynamixel_controllers_generate_messages_check_deps_StartController/fast:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/build
-.PHONY : _dynamixel_controllers_generate_messages_check_deps_StartController/fast
-
-# Convenience name for target.
-dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/rule:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/rule
-.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/rule
-
-# Convenience name for target.
-dynamixel_controllers_gennodejs: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/rule
-
-.PHONY : dynamixel_controllers_gennodejs
-
-# fast build rule for target.
-dynamixel_controllers_gennodejs/fast:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/build
-.PHONY : dynamixel_controllers_gennodejs/fast
-
-# Convenience name for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/rule:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/rule
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/rule
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/rule
 
 # Convenience name for target.
@@ -312,12 +177,147 @@ _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit: dynamixel_mo
 
 # fast build rule for target.
 _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit/fast:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/build
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit.dir/build
 .PHONY : _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit/fast
 
 # Convenience name for target.
+dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/rule:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/rule
+.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/rule
+
+# Convenience name for target.
+_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/rule
+
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch
+
+# fast build rule for target.
+_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch/fast:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch.dir/build
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch/fast
+
+# Convenience name for target.
+dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/rule:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/rule
+.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/rule
+
+# Convenience name for target.
+_dynamixel_controllers_generate_messages_check_deps_SetSpeed: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/rule
+
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetSpeed
+
+# fast build rule for target.
+_dynamixel_controllers_generate_messages_check_deps_SetSpeed/fast:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetSpeed.dir/build
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetSpeed/fast
+
+# Convenience name for target.
+dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/rule:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/rule
+.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/rule
+
+# Convenience name for target.
+_dynamixel_controllers_generate_messages_check_deps_TorqueEnable: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/rule
+
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_TorqueEnable
+
+# fast build rule for target.
+_dynamixel_controllers_generate_messages_check_deps_TorqueEnable/fast:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_TorqueEnable.dir/build
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_TorqueEnable/fast
+
+# Convenience name for target.
+dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/rule:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/rule
+.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/rule
+
+# Convenience name for target.
+_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/rule
+
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin
+
+# fast build rule for target.
+_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin/fast:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin.dir/build
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin/fast
+
+# Convenience name for target.
+dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/rule:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/rule
+.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/rule
+
+# Convenience name for target.
+_dynamixel_controllers_generate_messages_check_deps_RestartController: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/rule
+
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_RestartController
+
+# fast build rule for target.
+_dynamixel_controllers_generate_messages_check_deps_RestartController/fast:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_RestartController.dir/build
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_RestartController/fast
+
+# Convenience name for target.
+dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/rule:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/rule
+.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/rule
+
+# Convenience name for target.
+dynamixel_controllers_generate_messages: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/rule
+
+.PHONY : dynamixel_controllers_generate_messages
+
+# fast build rule for target.
+dynamixel_controllers_generate_messages/fast:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages.dir/build
+.PHONY : dynamixel_controllers_generate_messages/fast
+
+# Convenience name for target.
+dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/rule:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/rule
+.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/rule
+
+# Convenience name for target.
+_dynamixel_controllers_generate_messages_check_deps_StartController: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/rule
+
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_StartController
+
+# fast build rule for target.
+_dynamixel_controllers_generate_messages_check_deps_StartController/fast:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StartController.dir/build
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_StartController/fast
+
+# Convenience name for target.
+dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/rule:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/rule
+.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/rule
+
+# Convenience name for target.
+dynamixel_controllers_gennodejs: dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/rule
+
+.PHONY : dynamixel_controllers_gennodejs
+
+# fast build rule for target.
+dynamixel_controllers_gennodejs/fast:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gennodejs.dir/build
+.PHONY : dynamixel_controllers_gennodejs/fast
+
+# Convenience name for target.
+dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/rule:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/rule
+.PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/rule
+
+# Convenience name for target.
+_dynamixel_controllers_generate_messages_check_deps_StopController: dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/rule
+
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_StopController
+
+# fast build rule for target.
+_dynamixel_controllers_generate_messages_check_deps_StopController/fast:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_StopController.dir/build
+.PHONY : _dynamixel_controllers_generate_messages_check_deps_StopController/fast
+
+# Convenience name for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/rule:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/rule
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/rule
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -327,12 +327,12 @@ dynamixel_controllers_generate_messages_cpp: dynamixel_motor/dynamixel_controlle
 
 # fast build rule for target.
 dynamixel_controllers_generate_messages_cpp/fast:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/build
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_cpp.dir/build
 .PHONY : dynamixel_controllers_generate_messages_cpp/fast
 
 # Convenience name for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/rule:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/rule
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/rule
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -342,12 +342,12 @@ dynamixel_controllers_generate_messages_py: dynamixel_motor/dynamixel_controller
 
 # fast build rule for target.
 dynamixel_controllers_generate_messages_py/fast:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/build
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_py.dir/build
 .PHONY : dynamixel_controllers_generate_messages_py/fast
 
 # Convenience name for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/rule:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/rule
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/rule
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/rule
 
 # Convenience name for target.
@@ -357,12 +357,12 @@ dynamixel_controllers_gencpp: dynamixel_motor/dynamixel_controllers/CMakeFiles/d
 
 # fast build rule for target.
 dynamixel_controllers_gencpp/fast:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/build
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_gencpp.dir/build
 .PHONY : dynamixel_controllers_gencpp/fast
 
 # Convenience name for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/rule:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/rule
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/rule
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -372,12 +372,12 @@ dynamixel_controllers_generate_messages_eus: dynamixel_motor/dynamixel_controlle
 
 # fast build rule for target.
 dynamixel_controllers_generate_messages_eus/fast:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/build
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_eus.dir/build
 .PHONY : dynamixel_controllers_generate_messages_eus/fast
 
 # Convenience name for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/rule:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/rule
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/rule
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -387,12 +387,12 @@ dynamixel_controllers_generate_messages_lisp: dynamixel_motor/dynamixel_controll
 
 # fast build rule for target.
 dynamixel_controllers_generate_messages_lisp/fast:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/build
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_lisp.dir/build
 .PHONY : dynamixel_controllers_generate_messages_lisp/fast
 
 # Convenience name for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/rule:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/rule
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/rule
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/rule
 
 # Convenience name for target.
@@ -402,12 +402,12 @@ dynamixel_controllers_geneus: dynamixel_motor/dynamixel_controllers/CMakeFiles/d
 
 # fast build rule for target.
 dynamixel_controllers_geneus/fast:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/build
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_geneus.dir/build
 .PHONY : dynamixel_controllers_geneus/fast
 
 # Convenience name for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/rule:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/rule
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/rule
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/rule
 
 # Convenience name for target.
@@ -417,12 +417,12 @@ dynamixel_controllers_genlisp: dynamixel_motor/dynamixel_controllers/CMakeFiles/
 
 # fast build rule for target.
 dynamixel_controllers_genlisp/fast:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/build
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genlisp.dir/build
 .PHONY : dynamixel_controllers_genlisp/fast
 
 # Convenience name for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/rule:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/rule
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/rule
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -432,12 +432,12 @@ dynamixel_controllers_generate_messages_nodejs: dynamixel_motor/dynamixel_contro
 
 # fast build rule for target.
 dynamixel_controllers_generate_messages_nodejs/fast:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/build
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_generate_messages_nodejs.dir/build
 .PHONY : dynamixel_controllers_generate_messages_nodejs/fast
 
 # Convenience name for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/rule:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/rule
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/rule
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/rule
 
 # Convenience name for target.
@@ -447,12 +447,12 @@ dynamixel_controllers_genpy: dynamixel_motor/dynamixel_controllers/CMakeFiles/dy
 
 # fast build rule for target.
 dynamixel_controllers_genpy/fast:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/build
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/dynamixel_controllers_genpy.dir/build
 .PHONY : dynamixel_controllers_genpy/fast
 
 # Convenience name for target.
 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/rule:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/rule
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/rule
 .PHONY : dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/rule
 
 # Convenience name for target.
@@ -462,7 +462,7 @@ _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope: dynamixe
 
 # fast build rule for target.
 _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope/fast:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/build
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/build.make dynamixel_motor/dynamixel_controllers/CMakeFiles/_dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope.dir/build
 .PHONY : _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope/fast
 
 # Help Target
@@ -475,7 +475,7 @@ help:
 	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... _dynamixel_controllers_generate_messages_check_deps_StopController"
+	@echo "... _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit"
 	@echo "... _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch"
 	@echo "... _dynamixel_controllers_generate_messages_check_deps_SetSpeed"
 	@echo "... _dynamixel_controllers_generate_messages_check_deps_TorqueEnable"
@@ -484,7 +484,7 @@ help:
 	@echo "... dynamixel_controllers_generate_messages"
 	@echo "... _dynamixel_controllers_generate_messages_check_deps_StartController"
 	@echo "... dynamixel_controllers_gennodejs"
-	@echo "... _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit"
+	@echo "... _dynamixel_controllers_generate_messages_check_deps_StopController"
 	@echo "... dynamixel_controllers_generate_messages_cpp"
 	@echo "... dynamixel_controllers_generate_messages_py"
 	@echo "... dynamixel_controllers_gencpp"
@@ -509,6 +509,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/robot/mit212project/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

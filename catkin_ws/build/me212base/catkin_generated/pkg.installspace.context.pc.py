@@ -1,8 +1,8 @@
 # generated from catkin/cmake/template/pkg.context.pc.in
 CATKIN_PACKAGE_PREFIX = ""
-PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/luke/catkin_ws/mit212project/catkin_ws/install/include".split(';') if "/home/luke/catkin_ws/mit212project/catkin_ws/install/include" != "" else []
+PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/robot/mit212project/catkin_ws/install/include".split(';') if "/home/robot/mit212project/catkin_ws/install/include" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "me212base"
-PROJECT_SPACE_DIR = "/home/luke/catkin_ws/mit212project/catkin_ws/install"
+PROJECT_SPACE_DIR = "/home/robot/mit212project/catkin_ws/install"
 PROJECT_VERSION = "0.0.0"

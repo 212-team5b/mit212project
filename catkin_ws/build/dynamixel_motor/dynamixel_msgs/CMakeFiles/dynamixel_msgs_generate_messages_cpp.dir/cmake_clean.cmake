@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/dynamixel_msgs_generate_messages_cpp"
-  "/home/luke/catkin_ws/mit212project/catkin_ws/devel/include/dynamixel_msgs/MotorStateList.h"
-  "/home/luke/catkin_ws/mit212project/catkin_ws/devel/include/dynamixel_msgs/JointState.h"
-  "/home/luke/catkin_ws/mit212project/catkin_ws/devel/include/dynamixel_msgs/MotorState.h"
+  "/home/robot/mit212project/catkin_ws/devel/include/dynamixel_msgs/JointState.h"
+  "/home/robot/mit212project/catkin_ws/devel/include/dynamixel_msgs/MotorState.h"
+  "/home/robot/mit212project/catkin_ws/devel/include/dynamixel_msgs/MotorStateList.h"
 )
 
 # Per-language clean rules from dependency scanning.

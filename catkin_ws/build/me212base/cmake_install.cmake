@@ -1,8 +1,8 @@
-# Install script for directory: /home/luke/catkin_ws/mit212project/catkin_ws/src/me212base
+# Install script for directory: /home/robot/mit212project/catkin_ws/src/me212base
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/luke/catkin_ws/mit212project/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/robot/mit212project/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,53 +33,53 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/me212base/msg" TYPE FILE FILES "/home/luke/catkin_ws/mit212project/catkin_ws/src/me212base/msg/WheelVelCmd.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/me212base/msg" TYPE FILE FILES "/home/robot/mit212project/catkin_ws/src/me212base/msg/WheelVelCmd.msg")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/me212base/cmake" TYPE FILE FILES "/home/luke/catkin_ws/mit212project/catkin_ws/build/me212base/catkin_generated/installspace/me212base-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/me212base/cmake" TYPE FILE FILES "/home/robot/mit212project/catkin_ws/build/me212base/catkin_generated/installspace/me212base-msg-paths.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/luke/catkin_ws/mit212project/catkin_ws/devel/include/me212base")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/robot/mit212project/catkin_ws/devel/include/me212base")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/roseus/ros/me212base")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/robot/mit212project/catkin_ws/devel/share/roseus/ros/me212base")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/common-lisp/ros/me212base")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/robot/mit212project/catkin_ws/devel/share/common-lisp/ros/me212base")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/luke/catkin_ws/mit212project/catkin_ws/devel/share/gennodejs/ros/me212base")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/robot/mit212project/catkin_ws/devel/share/gennodejs/ros/me212base")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/me212base")
+  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/me212base")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/me212base")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/me212base")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/luke/catkin_ws/mit212project/catkin_ws/build/me212base/catkin_generated/installspace/me212base.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/robot/mit212project/catkin_ws/build/me212base/catkin_generated/installspace/me212base.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/me212base/cmake" TYPE FILE FILES "/home/luke/catkin_ws/mit212project/catkin_ws/build/me212base/catkin_generated/installspace/me212base-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/me212base/cmake" TYPE FILE FILES "/home/robot/mit212project/catkin_ws/build/me212base/catkin_generated/installspace/me212base-msg-extras.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/me212base/cmake" TYPE FILE FILES
-    "/home/luke/catkin_ws/mit212project/catkin_ws/build/me212base/catkin_generated/installspace/me212baseConfig.cmake"
-    "/home/luke/catkin_ws/mit212project/catkin_ws/build/me212base/catkin_generated/installspace/me212baseConfig-version.cmake"
+    "/home/robot/mit212project/catkin_ws/build/me212base/catkin_generated/installspace/me212baseConfig.cmake"
+    "/home/robot/mit212project/catkin_ws/build/me212base/catkin_generated/installspace/me212baseConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/me212base" TYPE FILE FILES "/home/luke/catkin_ws/mit212project/catkin_ws/src/me212base/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/me212base" TYPE FILE FILES "/home/robot/mit212project/catkin_ws/src/me212base/package.xml")
 endif()
 

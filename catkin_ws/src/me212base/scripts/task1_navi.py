@@ -21,7 +21,7 @@ def distance(point1,point2):
     return ((point1[0]-point2[0])**2 + (point1[1]-point2[1])**2)**0.5
 
 def Goal_test(robot_pose2d,tag_pose2d):
-    if abs(distance(robot_pose2d,tag_pose2d)) < 0.1:
+    if distance(robot_pose2d,tag_pose2d) < .5:
         return True
     else: return False
 
@@ -46,7 +46,7 @@ class ApriltagNavigator():
         # use apriltag pose detection to find where is the robot
         ##
         for detection in data.detections:
-            if detection.id == 0:
+            if detection.id in range(11):
                 pose_tag_base = helper.poseTransform(helper.pose2list(detection.pose),  homeFrame = '/camera', targetFrame = '/base_link', listener = self.listener)
                 pose_base_map = helper.poseTransform(helper.invPoseList(pose_tag_base), homeFrame = '/apriltag', targetFrame = '/map', listener = self.listener)
                 helper.pubFrame(self.br, pose = pose_base_map, frame_id = '/base_link', parent_frame_id = '/map', npub = 1)
@@ -64,7 +64,7 @@ class ApriltagNavigator():
         # This list will have the specific waypoints we want to track, so
         # all 10 tags dont need to be on this list.
         tag_locations2d = [[.035,0.86],[0.035,1.78],[0.2,1.94],[0.41,2.19],[1.29,2.40],[2.44,2.40],[3.6225, 1.795],[3.6225,0.855],[3.04,0.46],[1.83,0.46],[1.60,0.26]]
-
+        targets = [
         # Default Tag Parameters
         # "tag0" args="0.035 0.86 0.545 1.57079633 0 1.57079633 map apriltag0 100" />
         # "tag1" args="0.035 1.78 0.54 1.57079633 0 1.57079633 map apriltag1 100" />
@@ -96,13 +96,13 @@ class ApriltagNavigator():
 
             if robot_pose3d is None: #rotate in place maybe??
                 print '1. Tag not in view, Stop'
-                wv.desiredWV_R = 1  # rotate until you see a tag
-                wv.desiredWV_L = -1
+                wv.desiredWV_R = 0  # rotate until you see a tag
+                wv.desiredWV_L = 0
                 self.velcmd_pub.publish(wv)
                 continue
 
             robot_position2d = robot_pose3d[0:2]
-            target_position2d = tag_locations2d[0]
+            target_position2d = targets[0]
 
             robot_yaw = tfm.euler_from_quaternion(robot_pose3d[3:7]) [2]
             robot_pose2d = robot_position2d + [robot_yaw]
@@ -126,14 +126,39 @@ class ApriltagNavigator():
             xdis = robot_position2d[0]-target_position2d[0]
             print "Got Distance: ", xdis
 
-            randArea = [(robot_position2d[0]-1.5*xdis)/100, (robot_position2d[0]+1.5*xdis)/100]
+            randArea = [(robot_position2d[0]-2*xdis), (robot_position2d[0]+2*xdis)]
             if not is_plan:
+                import matplotlib.pyplot as plt
                 is_plan = True
                 start = time.time()
-                path = path_create(robot_position2d, target_position2d, obstacleList, randArea)
+                print "Robot Position: ", robot_position2d
+                print "Target Position: ", target_position2d
+                print "Obstacle List: ", obstacleList
+                print "Random Area: ", randArea
+                
+                while(1):
+                    try:
+                        path = path_create(robot_position2d, target_position2d, obstacleList, randArea)
+                    except SystemError:
+                        print "SystemError"
+                    else:
+                        break
+                out = path[1]
+                smoothedPath = path[2]
+                print path[0] #curvature
+                plt.plot(out[0], out[1],'-y')
+                plt.plot([x for (x,y) in smoothedPath], [y for (x,y) in smoothedPath],'-b')
+                plt.grid(True)
+                plt.pause(0.01)  # Need for Mac
+                plt.show()
+
+                
+                
                 # Need to implement dynamic range for plotting
                 # Need to implement handling for straight line case
                 curvature = path[0]
+                
+
             end = time.time()
             delta_t = end - start
             delta_v = path[2]
@@ -158,7 +183,8 @@ class ApriltagNavigator():
             # 2.4 Goal test, that is tag-dependent
             #		- if satisfied, knock off tag from list
             #  	        - use inverse kinematics formulas, and velocity and curvature formula on splines
-
+            
+            print "Distance Metric: ", distance(robot_pose2d,tag_locations2d[0]) 
             if Goal_test(robot_pose2d, tag_locations2d[0]):
                 is_plan = False
                 del tag_locations2d[0]

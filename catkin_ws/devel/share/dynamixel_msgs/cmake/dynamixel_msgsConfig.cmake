@@ -67,14 +67,14 @@ set(dynamixel_msgs_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(dynamixel_msgs_SOURCE_PREFIX /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs)
-  set(dynamixel_msgs_DEVEL_PREFIX /home/luke/catkin_ws/mit212project/catkin_ws/devel)
+  set(dynamixel_msgs_SOURCE_PREFIX /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs)
+  set(dynamixel_msgs_DEVEL_PREFIX /home/robot/mit212project/catkin_ws/devel)
   set(dynamixel_msgs_INSTALL_PREFIX "")
   set(dynamixel_msgs_PREFIX ${dynamixel_msgs_DEVEL_PREFIX})
 else()
   set(dynamixel_msgs_SOURCE_PREFIX "")
   set(dynamixel_msgs_DEVEL_PREFIX "")
-  set(dynamixel_msgs_INSTALL_PREFIX /home/luke/catkin_ws/mit212project/catkin_ws/install)
+  set(dynamixel_msgs_INSTALL_PREFIX /home/robot/mit212project/catkin_ws/install)
   set(dynamixel_msgs_PREFIX ${dynamixel_msgs_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(dynamixel_msgs_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/luke/catkin_ws/mit212project/catkin_ws/devel/include " STREQUAL " ")
+if(NOT "/home/robot/mit212project/catkin_ws/devel/include " STREQUAL " ")
   set(dynamixel_msgs_INCLUDE_DIRS "")
-  set(_include_dirs "/home/luke/catkin_ws/mit212project/catkin_ws/devel/include")
+  set(_include_dirs "/home/robot/mit212project/catkin_ws/devel/include")
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
       set(include ${idir})
@@ -103,7 +103,7 @@ if(NOT "/home/luke/catkin_ws/mit212project/catkin_ws/devel/include " STREQUAL " 
         message(FATAL_ERROR "Project 'dynamixel_msgs' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  Ask the maintainer 'Antons Rebguns <arebgun@gmail.com>' to fix it.")
       endif()
     else()
-      message(FATAL_ERROR "Project 'dynamixel_msgs' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/${idir}'.  Ask the maintainer 'Antons Rebguns <arebgun@gmail.com>' to fix it.")
+      message(FATAL_ERROR "Project 'dynamixel_msgs' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs/${idir}'.  Ask the maintainer 'Antons Rebguns <arebgun@gmail.com>' to fix it.")
     endif()
     _list_append_unique(dynamixel_msgs_INCLUDE_DIRS ${include})
   endforeach()
@@ -122,7 +122,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/luke/catkin_ws/mit212project/catkin_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/robot/mit212project/catkin_ws/devel/lib;/home/robot/mit212project/catkin_ws/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

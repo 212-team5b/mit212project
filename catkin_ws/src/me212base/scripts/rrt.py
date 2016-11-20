@@ -13,7 +13,7 @@ class RRT():
     Class for RRT Planning
     """
 
-    def __init__(self, start, goal, obstacleList,randArea,expandDis=.5,goalSampleRate=5,maxIter=500):
+    def __init__(self, start, goal, obstacleList,randArea,expandDis=.1,goalSampleRate=5,maxIter=500):
         """
         Setting Parameter
 
@@ -273,18 +273,18 @@ if __name__ == '__main__':
     import matplotlib.pyplot as plt
     #====Search Path with RRT====
     # Parameter
-    obstacleList = [
-        (0,6,2),
-        (5, 5, 1),
-        (3, 6, 2),
-        (3, 8, 2),
-        (3, 10, 2),
-        (7, 5, 2),
-        (9, 5, 2)
-    ]  # [x,y,size] Set radius bigger than actual values
-    start=[0,0]
-    goal=[5,10]
-    randArea=[-2,15]
+    obstacleList =  [] #[
+        #(0,6,2),
+        #(5, 5, 1),
+        #(3, 6, 2),
+        #(3, 8, 2),
+        #(3, 10, 2),
+        #(7, 5, 2),
+        #(9, 5, 2)
+    #]  # [x,y,size] Set radius bigger than actual values
+    start=[0.4893175502287317, 0.051436767981878864]
+    goal=[0.035, 0.86]
+    randArea= [-0.41931755022873163, 1.397952650686195]
     while(1):
         try:
             path = path_create(start, goal, obstacleList, randArea)
@@ -300,3 +300,5 @@ if __name__ == '__main__':
     plt.grid(True)
     plt.pause(0.01)  # Need for Mac
     plt.show()
+
+

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/me212base_generate_messages_cpp"
-  "/home/luke/catkin_ws/mit212project/catkin_ws/devel/include/me212base/WheelVelCmd.h"
+  "/home/robot/mit212project/catkin_ws/devel/include/me212base/WheelVelCmd.h"
 )
 
 # Per-language clean rules from dependency scanning.

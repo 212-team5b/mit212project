@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luke/catkin_ws/mit212project/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/robot/mit212project/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luke/catkin_ws/mit212project/catkin_ws/build
+CMAKE_BINARY_DIR = /home/robot/mit212project/catkin_ws/build
 
 # Utility rule file for dynamixel_msgs_genpy.
 
@@ -63,10 +63,10 @@ dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genpy.dir/build: dynami
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genpy.dir/build
 
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genpy.dir/clean:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_msgs && $(CMAKE_COMMAND) -P CMakeFiles/dynamixel_msgs_genpy.dir/cmake_clean.cmake
+	cd /home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_msgs && $(CMAKE_COMMAND) -P CMakeFiles/dynamixel_msgs_genpy.dir/cmake_clean.cmake
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genpy.dir/clean
 
 dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genpy.dir/depend:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luke/catkin_ws/mit212project/catkin_ws/src /home/luke/catkin_ws/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs /home/luke/catkin_ws/mit212project/catkin_ws/build /home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_msgs /home/luke/catkin_ws/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genpy.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robot/mit212project/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robot/mit212project/catkin_ws/src /home/robot/mit212project/catkin_ws/src/dynamixel_motor/dynamixel_msgs /home/robot/mit212project/catkin_ws/build /home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_msgs /home/robot/mit212project/catkin_ws/build/dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genpy.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : dynamixel_motor/dynamixel_msgs/CMakeFiles/dynamixel_msgs_genpy.dir/depend
 

@@ -43,52 +43,52 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luke/catkin_ws/mit212project/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/robot/mit212project/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luke/catkin_ws/mit212project/catkin_ws/build
+CMAKE_BINARY_DIR = /home/robot/mit212project/catkin_ws/build
 
 # Utility rule file for apriltags_generate_messages_py.
 
 # Include the progress variables for this target.
 include apriltags/CMakeFiles/apriltags_generate_messages_py.dir/progress.make
 
-apriltags/CMakeFiles/apriltags_generate_messages_py: /home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetection.py
-apriltags/CMakeFiles/apriltags_generate_messages_py: /home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetections.py
-apriltags/CMakeFiles/apriltags_generate_messages_py: /home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/__init__.py
+apriltags/CMakeFiles/apriltags_generate_messages_py: /home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetection.py
+apriltags/CMakeFiles/apriltags_generate_messages_py: /home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetections.py
+apriltags/CMakeFiles/apriltags_generate_messages_py: /home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/__init__.py
 
 
-/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetection.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetection.py: /home/luke/catkin_ws/mit212project/catkin_ws/src/apriltags/msg/AprilTagDetection.msg
-/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetection.py: /opt/ros/kinetic/share/geometry_msgs/msg/Quaternion.msg
-/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetection.py: /opt/ros/kinetic/share/geometry_msgs/msg/Point32.msg
-/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetection.py: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
-/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetection.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetection.py: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG apriltags/AprilTagDetection"
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build/apriltags && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/luke/catkin_ws/mit212project/catkin_ws/src/apriltags/msg/AprilTagDetection.msg -Iapriltags:/home/luke/catkin_ws/mit212project/catkin_ws/src/apriltags/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p apriltags -o /home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg
+/home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetection.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetection.py: /home/robot/mit212project/catkin_ws/src/apriltags/msg/AprilTagDetection.msg
+/home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetection.py: /opt/ros/kinetic/share/geometry_msgs/msg/Quaternion.msg
+/home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetection.py: /opt/ros/kinetic/share/geometry_msgs/msg/Point32.msg
+/home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetection.py: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
+/home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetection.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetection.py: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG apriltags/AprilTagDetection"
+	cd /home/robot/mit212project/catkin_ws/build/apriltags && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/robot/mit212project/catkin_ws/src/apriltags/msg/AprilTagDetection.msg -Iapriltags:/home/robot/mit212project/catkin_ws/src/apriltags/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p apriltags -o /home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg
 
-/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetections.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetections.py: /home/luke/catkin_ws/mit212project/catkin_ws/src/apriltags/msg/AprilTagDetections.msg
-/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetections.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetections.py: /home/luke/catkin_ws/mit212project/catkin_ws/src/apriltags/msg/AprilTagDetection.msg
-/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetections.py: /opt/ros/kinetic/share/geometry_msgs/msg/Quaternion.msg
-/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetections.py: /opt/ros/kinetic/share/geometry_msgs/msg/Point32.msg
-/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetections.py: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
-/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetections.py: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG apriltags/AprilTagDetections"
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build/apriltags && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/luke/catkin_ws/mit212project/catkin_ws/src/apriltags/msg/AprilTagDetections.msg -Iapriltags:/home/luke/catkin_ws/mit212project/catkin_ws/src/apriltags/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p apriltags -o /home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg
+/home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetections.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetections.py: /home/robot/mit212project/catkin_ws/src/apriltags/msg/AprilTagDetections.msg
+/home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetections.py: /home/robot/mit212project/catkin_ws/src/apriltags/msg/AprilTagDetection.msg
+/home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetections.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetections.py: /opt/ros/kinetic/share/geometry_msgs/msg/Quaternion.msg
+/home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetections.py: /opt/ros/kinetic/share/geometry_msgs/msg/Point32.msg
+/home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetections.py: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+/home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetections.py: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG apriltags/AprilTagDetections"
+	cd /home/robot/mit212project/catkin_ws/build/apriltags && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/robot/mit212project/catkin_ws/src/apriltags/msg/AprilTagDetections.msg -Iapriltags:/home/robot/mit212project/catkin_ws/src/apriltags/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p apriltags -o /home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg
 
-/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/__init__.py: /home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetection.py
-/home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/__init__.py: /home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetections.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/luke/catkin_ws/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for apriltags"
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build/apriltags && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg --initpy
+/home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/__init__.py: /home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetection.py
+/home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/__init__.py: /home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetections.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/mit212project/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for apriltags"
+	cd /home/robot/mit212project/catkin_ws/build/apriltags && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg --initpy
 
 apriltags_generate_messages_py: apriltags/CMakeFiles/apriltags_generate_messages_py
-apriltags_generate_messages_py: /home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetection.py
-apriltags_generate_messages_py: /home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetections.py
-apriltags_generate_messages_py: /home/luke/catkin_ws/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/__init__.py
+apriltags_generate_messages_py: /home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetection.py
+apriltags_generate_messages_py: /home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/_AprilTagDetections.py
+apriltags_generate_messages_py: /home/robot/mit212project/catkin_ws/devel/lib/python2.7/dist-packages/apriltags/msg/__init__.py
 apriltags_generate_messages_py: apriltags/CMakeFiles/apriltags_generate_messages_py.dir/build.make
 
 .PHONY : apriltags_generate_messages_py
@@ -99,10 +99,10 @@ apriltags/CMakeFiles/apriltags_generate_messages_py.dir/build: apriltags_generat
 .PHONY : apriltags/CMakeFiles/apriltags_generate_messages_py.dir/build
 
 apriltags/CMakeFiles/apriltags_generate_messages_py.dir/clean:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build/apriltags && $(CMAKE_COMMAND) -P CMakeFiles/apriltags_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/robot/mit212project/catkin_ws/build/apriltags && $(CMAKE_COMMAND) -P CMakeFiles/apriltags_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : apriltags/CMakeFiles/apriltags_generate_messages_py.dir/clean
 
 apriltags/CMakeFiles/apriltags_generate_messages_py.dir/depend:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luke/catkin_ws/mit212project/catkin_ws/src /home/luke/catkin_ws/mit212project/catkin_ws/src/apriltags /home/luke/catkin_ws/mit212project/catkin_ws/build /home/luke/catkin_ws/mit212project/catkin_ws/build/apriltags /home/luke/catkin_ws/mit212project/catkin_ws/build/apriltags/CMakeFiles/apriltags_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robot/mit212project/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robot/mit212project/catkin_ws/src /home/robot/mit212project/catkin_ws/src/apriltags /home/robot/mit212project/catkin_ws/build /home/robot/mit212project/catkin_ws/build/apriltags /home/robot/mit212project/catkin_ws/build/apriltags/CMakeFiles/apriltags_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : apriltags/CMakeFiles/apriltags_generate_messages_py.dir/depend
 

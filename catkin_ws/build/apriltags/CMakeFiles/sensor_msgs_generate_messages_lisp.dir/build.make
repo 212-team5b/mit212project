@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luke/catkin_ws/mit212project/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/robot/mit212project/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luke/catkin_ws/mit212project/catkin_ws/build
+CMAKE_BINARY_DIR = /home/robot/mit212project/catkin_ws/build
 
 # Utility rule file for sensor_msgs_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ apriltags/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build: sensor_msgs_g
 .PHONY : apriltags/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 
 apriltags/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build/apriltags && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/robot/mit212project/catkin_ws/build/apriltags && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : apriltags/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 
 apriltags/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend:
-	cd /home/luke/catkin_ws/mit212project/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luke/catkin_ws/mit212project/catkin_ws/src /home/luke/catkin_ws/mit212project/catkin_ws/src/apriltags /home/luke/catkin_ws/mit212project/catkin_ws/build /home/luke/catkin_ws/mit212project/catkin_ws/build/apriltags /home/luke/catkin_ws/mit212project/catkin_ws/build/apriltags/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robot/mit212project/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robot/mit212project/catkin_ws/src /home/robot/mit212project/catkin_ws/src/apriltags /home/robot/mit212project/catkin_ws/build /home/robot/mit212project/catkin_ws/build/apriltags /home/robot/mit212project/catkin_ws/build/apriltags/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : apriltags/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
 

@@ -1,2 +1,2 @@
 apriltags:dynamixel_motor/dynamixel_controllers:dynamixel_motor/dynamixel_driver:dynamixel_motor/dynamixel_motor:dynamixel_motor/dynamixel_msgs:dynamixel_motor/dynamixel_tutorials:me212arm:me212base:me212bot:me212cv
--DCATKIN_DEVEL_PREFIX=/home/luke/catkin_ws/mit212project/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/luke/catkin_ws/mit212project/catkin_ws/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/robot/mit212project/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/robot/mit212project/catkin_ws/install -G Unix Makefiles
