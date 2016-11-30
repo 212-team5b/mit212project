@@ -1,22 +1,22 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/robot/mit212project/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8463e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8463e.dir/build.make CMakeFiles/cmTC_8463e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_9dcaa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9dcaa.dir/build.make CMakeFiles/cmTC_9dcaa.dir/build
 make[1]: Entering directory '/home/robot/mit212project/catkin_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8463e.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -Wreturn-type -Wuninitialized     -o CMakeFiles/cmTC_8463e.dir/CheckSymbolExists.c.o   -c /home/robot/mit212project/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_8463e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8463e.dir/link.txt --verbose=1
-/usr/bin/cc   -Wreturn-type -Wuninitialized      CMakeFiles/cmTC_8463e.dir/CheckSymbolExists.c.o  -o cmTC_8463e -rdynamic 
-CMakeFiles/cmTC_8463e.dir/CheckSymbolExists.c.o: In function `main':
+Building C object CMakeFiles/cmTC_9dcaa.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -Wreturn-type -Wuninitialized     -o CMakeFiles/cmTC_9dcaa.dir/CheckSymbolExists.c.o   -c /home/robot/mit212project/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_9dcaa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9dcaa.dir/link.txt --verbose=1
+/usr/bin/cc   -Wreturn-type -Wuninitialized      CMakeFiles/cmTC_9dcaa.dir/CheckSymbolExists.c.o  -o cmTC_9dcaa -rdynamic 
+CMakeFiles/cmTC_9dcaa.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_8463e.dir/build.make:97: recipe for target 'cmTC_8463e' failed
-make[1]: *** [cmTC_8463e] Error 1
+CMakeFiles/cmTC_9dcaa.dir/build.make:97: recipe for target 'cmTC_9dcaa' failed
+make[1]: *** [cmTC_9dcaa] Error 1
 make[1]: Leaving directory '/home/robot/mit212project/catkin_ws/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_8463e/fast' failed
-make: *** [cmTC_8463e/fast] Error 2
+Makefile:126: recipe for target 'cmTC_9dcaa/fast' failed
+make: *** [cmTC_9dcaa/fast] Error 2
 
 File /home/robot/mit212project/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -36,20 +36,20 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/robot/mit212project/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a48cf/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a48cf.dir/build.make CMakeFiles/cmTC_a48cf.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_4364d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4364d.dir/build.make CMakeFiles/cmTC_4364d.dir/build
 make[1]: Entering directory '/home/robot/mit212project/catkin_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a48cf.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -Wreturn-type -Wuninitialized  -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_a48cf.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_a48cf
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a48cf.dir/link.txt --verbose=1
-/usr/bin/cc   -Wreturn-type -Wuninitialized  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_a48cf.dir/CheckFunctionExists.c.o  -o cmTC_a48cf -rdynamic -lpthreads 
+Building C object CMakeFiles/cmTC_4364d.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -Wreturn-type -Wuninitialized  -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_4364d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4364d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4364d.dir/link.txt --verbose=1
+/usr/bin/cc   -Wreturn-type -Wuninitialized  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_4364d.dir/CheckFunctionExists.c.o  -o cmTC_4364d -rdynamic -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_a48cf.dir/build.make:97: recipe for target 'cmTC_a48cf' failed
-make[1]: *** [cmTC_a48cf] Error 1
+CMakeFiles/cmTC_4364d.dir/build.make:97: recipe for target 'cmTC_4364d' failed
+make[1]: *** [cmTC_4364d] Error 1
 make[1]: Leaving directory '/home/robot/mit212project/catkin_ws/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_a48cf/fast' failed
-make: *** [cmTC_a48cf/fast] Error 2
+Makefile:126: recipe for target 'cmTC_4364d/fast' failed
+make: *** [cmTC_4364d/fast] Error 2
 
 

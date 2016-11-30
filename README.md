@@ -1,7 +1,4 @@
-# mit212project
-        # For kalman filtering we can try using pykalman 
-        # to install pykalman:
-        # sudo easy_install pykalman
+#2.12 Final Project Initial Repo
 
 ##Structure
 ###In 'catkin_ws/src':

@@ -56,16 +56,6 @@ CMAKE_BINARY_DIR = /home/robot/mit212project/catkin_ws/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -78,27 +68,16 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
+# Special rule for the target test
+test/fast: test
 
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
+.PHONY : test/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -111,16 +90,37 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
 
-.PHONY : test/fast
+.PHONY : list_install_components/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -165,19 +165,211 @@ depend:
 	cd /home/robot/mit212project/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+me212base/CMakeFiles/me212base_generate_messages_cpp.dir/rule:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 me212base/CMakeFiles/me212base_generate_messages_cpp.dir/rule
+.PHONY : me212base/CMakeFiles/me212base_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+me212base_generate_messages_cpp: me212base/CMakeFiles/me212base_generate_messages_cpp.dir/rule
+
+.PHONY : me212base_generate_messages_cpp
+
+# fast build rule for target.
+me212base_generate_messages_cpp/fast:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f me212base/CMakeFiles/me212base_generate_messages_cpp.dir/build.make me212base/CMakeFiles/me212base_generate_messages_cpp.dir/build
+.PHONY : me212base_generate_messages_cpp/fast
+
+# Convenience name for target.
+me212base/CMakeFiles/me212base_gencpp.dir/rule:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 me212base/CMakeFiles/me212base_gencpp.dir/rule
+.PHONY : me212base/CMakeFiles/me212base_gencpp.dir/rule
+
+# Convenience name for target.
+me212base_gencpp: me212base/CMakeFiles/me212base_gencpp.dir/rule
+
+.PHONY : me212base_gencpp
+
+# fast build rule for target.
+me212base_gencpp/fast:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f me212base/CMakeFiles/me212base_gencpp.dir/build.make me212base/CMakeFiles/me212base_gencpp.dir/build
+.PHONY : me212base_gencpp/fast
+
+# Convenience name for target.
+me212base/CMakeFiles/_me212base_generate_messages_check_deps_WheelVelCmd.dir/rule:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 me212base/CMakeFiles/_me212base_generate_messages_check_deps_WheelVelCmd.dir/rule
+.PHONY : me212base/CMakeFiles/_me212base_generate_messages_check_deps_WheelVelCmd.dir/rule
+
+# Convenience name for target.
+_me212base_generate_messages_check_deps_WheelVelCmd: me212base/CMakeFiles/_me212base_generate_messages_check_deps_WheelVelCmd.dir/rule
+
+.PHONY : _me212base_generate_messages_check_deps_WheelVelCmd
+
+# fast build rule for target.
+_me212base_generate_messages_check_deps_WheelVelCmd/fast:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f me212base/CMakeFiles/_me212base_generate_messages_check_deps_WheelVelCmd.dir/build.make me212base/CMakeFiles/_me212base_generate_messages_check_deps_WheelVelCmd.dir/build
+.PHONY : _me212base_generate_messages_check_deps_WheelVelCmd/fast
+
+# Convenience name for target.
+me212base/CMakeFiles/me212base_genlisp.dir/rule:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 me212base/CMakeFiles/me212base_genlisp.dir/rule
+.PHONY : me212base/CMakeFiles/me212base_genlisp.dir/rule
+
+# Convenience name for target.
+me212base_genlisp: me212base/CMakeFiles/me212base_genlisp.dir/rule
+
+.PHONY : me212base_genlisp
+
+# fast build rule for target.
+me212base_genlisp/fast:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f me212base/CMakeFiles/me212base_genlisp.dir/build.make me212base/CMakeFiles/me212base_genlisp.dir/build
+.PHONY : me212base_genlisp/fast
+
+# Convenience name for target.
+me212base/CMakeFiles/me212base_generate_messages_py.dir/rule:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 me212base/CMakeFiles/me212base_generate_messages_py.dir/rule
+.PHONY : me212base/CMakeFiles/me212base_generate_messages_py.dir/rule
+
+# Convenience name for target.
+me212base_generate_messages_py: me212base/CMakeFiles/me212base_generate_messages_py.dir/rule
+
+.PHONY : me212base_generate_messages_py
+
+# fast build rule for target.
+me212base_generate_messages_py/fast:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f me212base/CMakeFiles/me212base_generate_messages_py.dir/build.make me212base/CMakeFiles/me212base_generate_messages_py.dir/build
+.PHONY : me212base_generate_messages_py/fast
+
+# Convenience name for target.
+me212base/CMakeFiles/me212base_generate_messages.dir/rule:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 me212base/CMakeFiles/me212base_generate_messages.dir/rule
+.PHONY : me212base/CMakeFiles/me212base_generate_messages.dir/rule
+
+# Convenience name for target.
+me212base_generate_messages: me212base/CMakeFiles/me212base_generate_messages.dir/rule
+
+.PHONY : me212base_generate_messages
+
+# fast build rule for target.
+me212base_generate_messages/fast:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f me212base/CMakeFiles/me212base_generate_messages.dir/build.make me212base/CMakeFiles/me212base_generate_messages.dir/build
+.PHONY : me212base_generate_messages/fast
+
+# Convenience name for target.
+me212base/CMakeFiles/me212base_generate_messages_nodejs.dir/rule:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 me212base/CMakeFiles/me212base_generate_messages_nodejs.dir/rule
+.PHONY : me212base/CMakeFiles/me212base_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+me212base_generate_messages_nodejs: me212base/CMakeFiles/me212base_generate_messages_nodejs.dir/rule
+
+.PHONY : me212base_generate_messages_nodejs
+
+# fast build rule for target.
+me212base_generate_messages_nodejs/fast:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f me212base/CMakeFiles/me212base_generate_messages_nodejs.dir/build.make me212base/CMakeFiles/me212base_generate_messages_nodejs.dir/build
+.PHONY : me212base_generate_messages_nodejs/fast
+
+# Convenience name for target.
+me212base/CMakeFiles/me212base_gennodejs.dir/rule:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 me212base/CMakeFiles/me212base_gennodejs.dir/rule
+.PHONY : me212base/CMakeFiles/me212base_gennodejs.dir/rule
+
+# Convenience name for target.
+me212base_gennodejs: me212base/CMakeFiles/me212base_gennodejs.dir/rule
+
+.PHONY : me212base_gennodejs
+
+# fast build rule for target.
+me212base_gennodejs/fast:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f me212base/CMakeFiles/me212base_gennodejs.dir/build.make me212base/CMakeFiles/me212base_gennodejs.dir/build
+.PHONY : me212base_gennodejs/fast
+
+# Convenience name for target.
+me212base/CMakeFiles/me212base_generate_messages_eus.dir/rule:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 me212base/CMakeFiles/me212base_generate_messages_eus.dir/rule
+.PHONY : me212base/CMakeFiles/me212base_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+me212base_generate_messages_eus: me212base/CMakeFiles/me212base_generate_messages_eus.dir/rule
+
+.PHONY : me212base_generate_messages_eus
+
+# fast build rule for target.
+me212base_generate_messages_eus/fast:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f me212base/CMakeFiles/me212base_generate_messages_eus.dir/build.make me212base/CMakeFiles/me212base_generate_messages_eus.dir/build
+.PHONY : me212base_generate_messages_eus/fast
+
+# Convenience name for target.
+me212base/CMakeFiles/me212base_genpy.dir/rule:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 me212base/CMakeFiles/me212base_genpy.dir/rule
+.PHONY : me212base/CMakeFiles/me212base_genpy.dir/rule
+
+# Convenience name for target.
+me212base_genpy: me212base/CMakeFiles/me212base_genpy.dir/rule
+
+.PHONY : me212base_genpy
+
+# fast build rule for target.
+me212base_genpy/fast:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f me212base/CMakeFiles/me212base_genpy.dir/build.make me212base/CMakeFiles/me212base_genpy.dir/build
+.PHONY : me212base_genpy/fast
+
+# Convenience name for target.
+me212base/CMakeFiles/me212base_geneus.dir/rule:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 me212base/CMakeFiles/me212base_geneus.dir/rule
+.PHONY : me212base/CMakeFiles/me212base_geneus.dir/rule
+
+# Convenience name for target.
+me212base_geneus: me212base/CMakeFiles/me212base_geneus.dir/rule
+
+.PHONY : me212base_geneus
+
+# fast build rule for target.
+me212base_geneus/fast:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f me212base/CMakeFiles/me212base_geneus.dir/build.make me212base/CMakeFiles/me212base_geneus.dir/build
+.PHONY : me212base_geneus/fast
+
+# Convenience name for target.
+me212base/CMakeFiles/me212base_generate_messages_lisp.dir/rule:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 me212base/CMakeFiles/me212base_generate_messages_lisp.dir/rule
+.PHONY : me212base/CMakeFiles/me212base_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+me212base_generate_messages_lisp: me212base/CMakeFiles/me212base_generate_messages_lisp.dir/rule
+
+.PHONY : me212base_generate_messages_lisp
+
+# fast build rule for target.
+me212base_generate_messages_lisp/fast:
+	cd /home/robot/mit212project/catkin_ws/build && $(MAKE) -f me212base/CMakeFiles/me212base_generate_messages_lisp.dir/build.make me212base/CMakeFiles/me212base_generate_messages_lisp.dir/build
+.PHONY : me212base_generate_messages_lisp/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... list_install_components"
 	@echo "... install"
-	@echo "... rebuild_cache"
-	@echo "... install/strip"
-	@echo "... install/local"
 	@echo "... test"
+	@echo "... install/local"
+	@echo "... me212base_generate_messages_cpp"
+	@echo "... me212base_gencpp"
+	@echo "... _me212base_generate_messages_check_deps_WheelVelCmd"
+	@echo "... me212base_genlisp"
+	@echo "... list_install_components"
+	@echo "... install/strip"
+	@echo "... me212base_generate_messages_py"
+	@echo "... me212base_generate_messages"
+	@echo "... rebuild_cache"
+	@echo "... me212base_generate_messages_nodejs"
+	@echo "... me212base_gennodejs"
+	@echo "... me212base_generate_messages_eus"
+	@echo "... me212base_genpy"
+	@echo "... me212base_geneus"
 	@echo "... edit_cache"
+	@echo "... me212base_generate_messages_lisp"
 .PHONY : help
 
 

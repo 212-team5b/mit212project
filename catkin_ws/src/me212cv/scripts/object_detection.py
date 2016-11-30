@@ -10,6 +10,7 @@ import cv2  # OpenCV module
 from sensor_msgs.msg import Image, CameraInfo
 from visualization_msgs.msg import Marker
 from geometry_msgs.msg import Point, Pose, Twist, Vector3, Quaternion
+import std_msgs.msg
 from std_msgs.msg import ColorRGBA
 
 from cv_bridge import CvBridge, CvBridgeError
@@ -20,6 +21,9 @@ rospy.init_node('object_detection', anonymous=True)
 
 # Publisher for publishing pyramid marker in rviz
 vis_pub = rospy.Publisher('visualization_marker', Marker, queue_size=10) 
+
+# Publisher for publishing new obstacle outline
+obs_pub = rospy.Publisher('obstacle_coordinates', std_msgs.msg.String, queue_size=10) 
 
 # Bridge to convert ROS Image type to OpenCV Image type
 cv_bridge = CvBridge()  
@@ -36,8 +40,8 @@ cx = msg.P[2]
 cy = msg.P[6]
 
 def main():
-    useHSV   = False 
-    useDepth = False
+    useHSV   = True 
+    useDepth = True
     if not useHSV:
         # Task 1
 
@@ -80,7 +84,7 @@ def cvWindowMouseCallBackFunc(event, xp, yp, flags, param):
     # 1. Set the object to 2 meters away from camera
     zc = 2.0
     # 2. Visualize the pyramid
-    showPyramid(xp, yp, zc, 10, 10)
+    X1,X2,X3,X4,Z = showPyramid(xp, yp, zc, 10, 10)
 
 # Task 2 callback
 def rosHSVProcessCallBack(msg):
@@ -98,13 +102,18 @@ def rosHSVProcessCallBack(msg):
         xp,yp,w,h = cv2.boundingRect(cnt)  
         
         # Set the object to 2 meters away from camera
+        # we should probably use the depth sensor here?
         zc = 2    
         
         # Draw the bounding rectangle
         cv2.rectangle(cv_image,(xp,yp),(xp+w,yp+h),[0,255,255], 2)
         
         centerx, centery = xp+w/2, yp+h/2
-        showPyramid(centerx, centery, zc, w, h)
+        X1,X2,X3,X4 = showPyramid(centerx, centery, zc, w, h)
+        obstacle = [X1,X2,X3,X4]
+        print "Obstacle: ", obstacle
+        obs_pub.publish(data=str(obstacle)) 
+        # should the publisher be inside or outside of the contour loop? 
     
 
 # Task 2 object detection code
@@ -112,19 +121,31 @@ def HSVObjectDetection(cv_image, toPrint = True):
     hsv_image = cv2.cvtColor(cv_image, cv2.COLOR_BGR2HSV)
     
     # define range of red color in HSV
-    lower_red = np.array([170,50,50])
-    upper_red = np.array([180,255,255])
+    # lower_red = np.array([170,50,50]) # need to change and get colors for brown green blue yellow and the pidgey 
+    # upper_red = np.array([180,255,255])
+    
+    lower_red = np.array([15,50,40])
+    upper_red = np.array([35,255,255])
+    
+    # HSV, Hue (color) Saturation Value (Brigthness) 
+    # guesses based off google/web links
+    # brown [30,100,59]
+    # green [110,100,53]
+    # blue [240,100,50]
+    # yellow [60,100,50] #combination of red and green
+    # pidgey [?,?,?]
+    
 
     # Threshold the HSV image to get only red colors
     mask = cv2.inRange(hsv_image, lower_red, upper_red)   ##
-    mask_eroded         = cv2.erode(mask, None, iterations = 3)  ##
-    mask_eroded_dilated = cv2.dilate(mask_eroded, None, iterations = 10)  ##
+    mask_eroded         = cv2.erode(mask, None, iterations = 2)  ##
+    mask_eroded_dilated = cv2.dilate(mask_eroded, None, iterations = 4)  ##
     
     if toPrint:
         print 'hsv', hsv_image[240][320] # the center point hsv
         
     showImageInCVWindow(cv_image, mask_eroded, mask_eroded_dilated)
-    contours,hierarchy = cv2.findContours(mask_eroded_dilated,cv2.RETR_LIST,cv2.CHAIN_APPROX_SIMPLE)
+    image,contours,hierarchy = cv2.findContours(mask_eroded_dilated,cv2.RETR_LIST,cv2.CHAIN_APPROX_SIMPLE)
     return contours, mask_eroded_dilated
 
 # Task 3 callback
@@ -137,21 +158,30 @@ def rosRGBDCallBack(rgb_data, depth_data):
         print(e)
 
     contours, mask_image = HSVObjectDetection(cv_image, toPrint = False)
-
+    obstacleList = []
     for cnt in contours:
-        xp,yp,w,h = cv2.boundingRect(cnt)
+        peri = cv2.arcLength(cnt,True)
+        approx = cv2.approxPolyDP(cnt,.1*peri,True)
+        if len(approx) >4 and len(approx) <= 6:
+            area = cv2.contourArea(approx)
+            xp,yp,w,h = cv2.boundingRect(approx)
+            aspectRatio = w/float(h)
         
-        # Get depth value from depth image, need to make sure the value is in the normal range 0.1-10 meter
-        if not math.isnan(cv_depthimage2[int(yp)][int(xp)]) and cv_depthimage2[int(yp)][int(xp)] > 0.1 and cv_depthimage2[int(yp)][int(xp)] < 10.0:
-            zc = cv_depthimage2[int(yp)][int(xp)]
-            #print 'zc', zc
+            # Get depth value from depth image, need to make sure the value is in the normal range 0.1-10 meter
+            if not math.isnan(cv_depthimage2[int(yp)][int(xp)]) and cv_depthimage2[int(yp)][int(xp)] > 0.1 and cv_depthimage2[int(yp)][int(xp)] < 10.0:
+                zc = cv_depthimage2[int(yp)][int(xp)]
+                #print 'zc', zc
+            else:
+                continue
+            centerx, centery = xp+w/2, yp+h/2
+            cv2.rectangle(cv_image,(xp,yp),(xp+w,yp+h),[0,255,255],2)
+        
+            X1,X2,X3,X4 = showPyramid(centerx, centery, zc, w, h)
+            obstacle = [X1,X2,X3,X4]
+            print "Obstacle: ", obstacle
+            obs_pub.publish(data=str(obstacle))
         else:
             continue
-            
-        centerx, centery = xp+w/2, yp+h/2
-        cv2.rectangle(cv_image,(xp,yp),(xp+w,yp+h),[0,255,255],2)
-        
-        showPyramid(centerx, centery, zc, w, h)
 
 def getXYZ(xp, yp, zc, fx,fy,cx,cy):
     ## 
@@ -184,6 +214,7 @@ def showPyramid(xp, yp, zc, w, h):
     X3 = getXYZ(xp+w/2, yp+h/2, zc, fx, fy, cx, cy)
     X4 = getXYZ(xp+w/2, yp-h/2, zc, fx, fy, cx, cy)
     vis_pub.publish(createTriangleListMarker(1, [X1, X2, X3, X4], rgba = [1,0,0,1], frame_id = '/camera'))
+    return X1,X2,X3,X4
 
 # Create a list of Triangle markers for visualization
 def createTriangleListMarker(marker_id, points, rgba, frame_id = '/camera'):
