@@ -85,10 +85,12 @@ class PIController {
 
 class SerialComm {
   public:
-    float desiredWV_R, desiredWV_L, hand_state;
+    float desiredWV_R, desiredWV_L; 
+    int hand_state;
+    
     
   
-    SerialComm(): desiredWV_R(0), desiredWV_L(0){
+    SerialComm(): desiredWV_R(0), desiredWV_L(0), hand_state(2000){
         prevSerialTime = micros();
     }
     void receiveSerialData(){
@@ -101,9 +103,16 @@ class SerialComm {
                 command[i] = tempString.toFloat();
                 commandString = commandString.substring(indexPointer+1);
             }
-            desiredWV_R = command[0];
-            desiredWV_L = command[1];
-            hand_state  = command[2];
+            //Serial.print(command[0]); Serial.print(",");
+            //Serial.print(command[1]); Serial.print(",");
+            //Serial.println(command[2]); 
+            if(command[2] > 0.5){
+               desiredWV_R = command[0];
+               desiredWV_L = command[1];
+            }
+            else{
+               hand_state  = command[0];
+            }
         }
     }
     void send(const RobotPose& robotPose) {

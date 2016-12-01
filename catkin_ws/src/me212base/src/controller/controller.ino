@@ -17,13 +17,12 @@ unsigned long       prevTime = 0;
 
 boolean usePathPlanner = true;
 
-int val;    // variable to read the value from the analog pin
-
+int val = 0;    // variable to read the value from the analog pin
+int lastval = 0;
 
 void setup() {
     Serial.begin(115200);       // initialize Serial Communication
-    myservo.attach(8);
-    myservo.write(2000);
+    myservo.attach(2);
     encoder.init();  // connect with encoder
     wheelVelCtrl.init();        // connect with motor
     delay(1e3);                 // delay 1000 ms so the robot doesn't drive off without you
@@ -31,6 +30,9 @@ void setup() {
 
 void loop() {
     //timed loop implementation
+ 
+
+    
     unsigned long currentTime = micros();
     
     if (currentTime - prevTime >= PERIOD_MICROS) {
@@ -45,16 +47,20 @@ void loop() {
         serialComm.send(robotPose); 
         serialComm.receiveSerialData();
 
+        
+        val = serialComm.hand_state;            // reads the value of the potentiometer (value between 0 and 1023)
+        if(lastval != val){
+            myservo.write(val);                  // sets the servo position according to the scaled value
+            delay(25);
+            lastval = val;  
+        } 
+
         // 4. Send the velocity command to wheel velocity controller
         wheelVelCtrl.doPIControl("Left", serialComm.desiredWV_L, encoder.v_L); //serialComm.desiredWV_L
         wheelVelCtrl.doPIControl("Right", serialComm.desiredWV_R, encoder.v_R); //serialComm.desiredWV_R
 
         prevTime = currentTime; // update time
     } 
-
-    val = serialComm.hand_state;            // reads the value of the potentiometer (value between 0 and 1023)
-    myservo.write(val);                  // sets the servo position according to the scaled value
-    delay(25);                           // waits for the servo to get there
 }
 
 
