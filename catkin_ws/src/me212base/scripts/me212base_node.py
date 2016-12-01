@@ -34,13 +34,17 @@ class Arduino():
         
         self.prevtime = rospy.Time.now()
         
+        self.hand_state = 212
+        
         self.velcmd_sub = rospy.Subscriber("cmdvel", WheelVelCmd, self.cmdvel)
-        #self.hand_state_sub = rospyl.Subscriber("hand_state", std_msgs.msg., self.hand_state)
+        self.hand_state_sub = rospyl.Subscriber("hand_state", std_msgs.msg.Float64, self.hand_transition)
 
     def cmdvel(self, msg):  
-        self.comm.write("%f,%f\n" % (msg.desiredWV_R, msg.desiredWV_L))
+        self.comm.write("%f,%f,%f\n" % (msg.desiredWV_R, msg.desiredWV_L,self.hand_state))
     
-    #def hand_state(self,msg):
+    def hand_transition(self,msg):
+        self.hand_state = msg
+        print "Subscribing to Hand State... ", msg
         
     # loop() is for reading odometry from Arduino and publish to rostopic.
     def loop(self):

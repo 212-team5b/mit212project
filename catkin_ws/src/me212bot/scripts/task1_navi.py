@@ -22,6 +22,7 @@ import time
 
 to_arm1 = rospy.Publisher("/joint_position1", std_msgs.msg.Float64, queue_size = 1)
 to_arm2 = rospy.Publisher("/joint_position2", std_msgs.msg.Float64, queue_size = 1)
+hand_state_pub = rospy.Publisher("hand_state",std_msgs.msg.Float64,queue_size=1)
 
 # This list will have the specific waypoints we want to track, so
 # all 10 tags dont need to be on this list.
@@ -31,9 +32,9 @@ target_id = [0,4,3,5,9,5,8,5]
 
 
 fixedObstacles = [(1.07,.508,.12),(.8128,.7112,.12)] # define fixed obstacles defines (x,y,radius) (radius is .12 meters for small boxes)
-obstacle_list = [fixedObstacles[0],fixedObstacles[1]]#[],[]] # First two obstacles 
+obstacle_list = [fixedObstacles[0],fixedObstacles[1],(.74,1.21,.12),(.9,1.21,.12),(1.05,1.21,.12)]#[],[]] # First two obstacles 
 
-
+tmp = 0
 
 filter_pos = []
 
@@ -55,17 +56,28 @@ def generateWheelVel(robot_pose3d,target_pose):
     desired_theta = np.arctan2(delta_y,delta_x)
     theta_diff = helper.diffrad(robot_pose3d[2],desired_theta)
     
-    if abs(theta_diff) < 0.15:
+    if abs(theta_diff) < 0.2:
         return (v/(2*r), v/(2*r))
         
     elif (np.sign(theta_diff) == 1):
-        return (v/(4*r), -v/(4*r))
+        if abs(theta_diff) < 0.25:
+            return (v/(8*r), -v/(8*r))
+        else:
+            return (v/(4*r), -v/(4*r))
         
     else:
-        return (-v/(4*r), v/(4*r))
+        if abs(theta_diff) < 0.25:
+            return (-v/(8*r), v/(8*r))
+        else:
+            return (-v/(4*r), v/(4*r))
 
-def hand_state(next_state):
-    pass
+def hand_transition(next_state):
+    if next_state == "open_hand":
+        val = 1000
+    else:
+        val = 212
+    print "Publishing... ", val
+    hand_state_pub.publish(val)
 
 
 
@@ -78,6 +90,7 @@ class ApriltagNavigator():
         self.odometry_sub = rospy.Subscriber("/odometry", Pose, self.odometry_callback, queue_size=1)
         self.velcmd_pub = rospy.Publisher("/cmdvel", WheelVelCmd, queue_size = 1)
         self.pose = [0,0,0]
+        self.contours = 0
         # calculate transforms to each obstacle (obstacles in world frame)
         # keep only unique transformed obstacles (with a measure of average) 
         
@@ -88,7 +101,7 @@ class ApriltagNavigator():
 
         self.thread.start()
 
-        rospy.sleep(1)
+        rospy.sleep(0.1)
 
     def apriltag_callback(self, data):
         # use apriltag pose detection to find where is the robot
@@ -100,19 +113,20 @@ class ApriltagNavigator():
                 helper.pubFrame(self.br, pose = pose_base_map, frame_id = '/robot_base', parent_frame_id = '/map', npub = 1)
     
     def obstacle_callback(self, data):
-        po1 = [(.08,1.47,.12),(.23,1.47,.12),(.381,1.47,.12)]
-        po2 = [(.74,1.21,.12),(.9,1.21,.12),(1.05,1.21,.12)]
+       
         
-        obstacle = eval(data.data)
-        obstacle = np.average(obstacle,axis=0) + [0,0,0,1]
+        self.contours = eval(data.data)
+        #obstacle = np.average(obstacle,axis=0) + [0,0,0,1]
         
-        obstacle_to_map = helper.poseTransform(helper.pose2list(obstacle),  homeFrame = '/camera', targetFrame = '/map', listener = self.listener)
+        #obstacle_to_map = helper.poseTransform(helper.pose2list(obstacle),  homeFrame = '/camera', targetFrame = '/map', listener = self.listener)
         
         
-        if distance(obstacle_to_map,po1[0]) < 0.1 or distance(obstacle_to_map,po1[1]) <0.1 or distance(obstacle_to_map,po1[2])<0.1:
-            obstacle_list.append(po1)
-        elif distance(obstacle_to_map,po2[0])<0.1 or distance(obstacle_to_map,po2[1])<0.1 or distance(obstacle_to_map,po2[2])<0.1:
-            obstacle_list.append(po2)
+        #if distance(obstacle_to_map,po1[0]) < 0.1 or distance(obstacle_to_map,po1[1]) <0.1 or distance(obstacle_to_map,po1[2])<0.1:
+            #obstacle_list.append(po1)
+        #elif distance(obstacle_to_map,po2[0])<0.1 or distance(obstacle_to_map,po2[1])<0.1 or distance(obstacle_to_map,po2[2])<0.1:
+            #obstacle_list.append(po2)
+        print "callback working"
+        rospy.sleep(1)
         
     def odometry_callback(self,data):
         self.pose = [data.position.x,data.position.y,data.position.z]
@@ -151,7 +165,7 @@ class ApriltagNavigator():
             
             #print "Odometry Pose: ", self.pose
             
-            if len(filter_pos)>100:
+            if len(filter_pos)>50:
                 del filter_pos[0]
                 
             robot_pose2d = np.average(filter_pos,axis=0)
@@ -184,7 +198,22 @@ class ApriltagNavigator():
         #plt.show()
         #start = time.time()
         return smoothedPath, is_plan
-            
+    
+    
+    def check_obstacles(self):
+        po1 = [(.08,1.47,.12),(.23,1.47,.12),(.381,1.47,.12)]
+        po2 = [(.74,1.21,.12),(.9,1.21,.12),(1.05,1.21,.12)]
+        print self.contours
+        rel = self.contours
+        tmp = 1
+        if rel > 35:
+            if (.08,1.47,.12) not in obstacle_list:
+                del obstacle_list[-1]
+                del obstacle_list[-1]
+                del obstacle_list[-1]
+                obstacle_list.extend(po1)
+        print obstacle_list
+        
     def navi_loop(self):
                 
         wv = WheelVelCmd()
@@ -203,6 +232,10 @@ class ApriltagNavigator():
             print "Left: ", wv.desiredWV_L, "Right: ", wv.desiredWV_R
             self.velcmd_pub.publish(wv)
  
+        hand_transition("close_hand")
+        rospy.sleep(1)
+        hand_transition("open_hand")
+        
         # Loop Start
         while not rospy.is_shutdown() :
 
@@ -215,31 +248,35 @@ class ApriltagNavigator():
                 is_plan = False
                 del targets[0]
                 
-                if len(targets) == :
+                if len(targets) == 8:
                     # Grab tin
                     # grab_pidgey(robot_pose2d)
-                    #hand(close)
-                    pass
-                
-                elif len(targets) == :
-                    pass
                     
-                elif len(targets) == :
-                    pass
-                
-                elif len(targets) == :
-                    pass
+                    hand_transition("close_hand")
                     
-                elif len(targets) == :
-                    pass 
                 
-                elif len(targets) == :
-                    pass
+                elif len(targets) == 7:
+                    # Drop Tin
+                    hand_transition("open_hand")
+                    
+                elif len(targets) == 4:
+                    hand_transition("close_hand")
+                
+                elif len(targets) == 3:
+                    hand_transition("open_hand")
+                    
+                elif len(targets) == 2:
+                    hand_transition("close_hand") 
+                
+                elif len(targets) == 1:
+                    hand_transition("open_hand")
+            
+            self.check_obstacles()
             
             # Generate New Plan
-            if not is_plan or (len(obstacle_list) > 2):
+            if (not is_plan) or ((.08,1.47,.12) in obstacle_list) and (tmp==0):
                 smoothedPath, is_plan = self.replan(robot_position2d,targets[0],obstacle_list)
-            
+        
             # Waypoint Follow
             if distance(robot_pose2d,smoothedPath[0]) < 0.05:
                 del smoothedPath[0]

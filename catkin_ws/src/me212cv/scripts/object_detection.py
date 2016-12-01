@@ -23,7 +23,7 @@ rospy.init_node('object_detection', anonymous=True)
 vis_pub = rospy.Publisher('visualization_marker', Marker, queue_size=10) 
 
 # Publisher for publishing new obstacle outline
-obs_pub = rospy.Publisher('obstacle_coordinates', std_msgs.msg.String, queue_size=10) 
+obs_pub = rospy.Publisher('/obstacle_coordinates', std_msgs.msg.String, queue_size=10) 
 
 # Bridge to convert ROS Image type to OpenCV Image type
 cv_bridge = CvBridge()  
@@ -41,7 +41,7 @@ cy = msg.P[6]
 
 def main():
     useHSV   = True 
-    useDepth = True
+    useDepth = False
     if not useHSV:
         # Task 1
 
@@ -94,24 +94,25 @@ def rosHSVProcessCallBack(msg):
         print(e)
         
     contours, mask_image = HSVObjectDetection(cv_image)
+    print len(contours)
     
-    for cnt in contours:
-        # Find a bounding box of detected region
-        #  xp, yp are the coordinate of the top left corner of the bounding rectangle
-        #  w, h are the width and height of the bounding rectangle
-        xp,yp,w,h = cv2.boundingRect(cnt)  
+    #for cnt in contours:
+        ## Find a bounding box of detected region
+        ##  xp, yp are the coordinate of the top left corner of the bounding rectangle
+        ##  w, h are the width and height of the bounding rectangle
+        #xp,yp,w,h = cv2.boundingRect(cnt)  
         
-        # Set the object to 2 meters away from camera
-        zc = 2    
+        ## Set the object to 2 meters away from camera
+        #zc = 2    
         
-        # Draw the bounding rectangle
-        cv2.rectangle(cv_image,(xp,yp),(xp+w,yp+h),[0,255,255], 2)
+        ## Draw the bounding rectangle
+        #cv2.rectangle(cv_image,(xp,yp),(xp+w,yp+h),[0,255,255], 2)
         
-        centerx, centery = xp+w/2, yp+h/2
-        X1,X2,X3,X4 = showPyramid(centerx, centery, zc, w, h)
-        obstacle = [X1,X2,X3,X4]
-        print "Obstacle: ", obstacle
-        obs_pub.publish(data=str(obstacle)) 
+        #centerx, centery = xp+w/2, yp+h/2
+        #X1,X2,X3,X4 = showPyramid(centerx, centery, zc, w, h)
+        #obstacle = [X1,X2,X3,X4]
+    ##print "Obstacle: ", obstacle
+    obs_pub.publish(data=str(len(contours))) 
     
 
 # Task 2 object detection code
@@ -142,7 +143,7 @@ def HSVObjectDetection(cv_image, toPrint = True):
     if toPrint:
         print 'hsv', hsv_image[240][320] # the center point hsv
         
-    # showImageInCVWindow(cv_image, mask_eroded, mask_eroded_dilated)
+    showImageInCVWindow(cv_image, mask_eroded, mask_eroded_dilated)
     image,contours,hierarchy = cv2.findContours(mask_eroded_dilated,cv2.RETR_LIST,cv2.CHAIN_APPROX_SIMPLE)
     return contours, mask_eroded_dilated
 
