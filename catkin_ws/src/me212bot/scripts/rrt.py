@@ -295,7 +295,17 @@ if __name__ == '__main__':
             break
     out = path[1]
     smoothedPath = path[2]
-    print path[0] #curvature
+    print "smoothedpath", smoothedPath
+    while(len(smoothedPath) < 100):
+        tmp = [smoothedPath[0]]
+        for i in range(len(smoothedPath)-1):
+            mid_x = (smoothedPath[i][0] + smoothedPath[i+1][0])/2
+            mid_y = (smoothedPath[i][1] + smoothedPath[i+1][1])/2
+            tmp.append([mid_x, mid_y])
+            tmp.append(smoothedPath[i+1])
+        smoothedPath = tmp
+    print "more waypoints", smoothedPath
+    # print path[0] #curvature
     plt.plot(out[0], out[1],'-y')
     plt.plot([x for (x,y) in smoothedPath], [y for (x,y) in smoothedPath],'-b')
     plt.grid(True)
