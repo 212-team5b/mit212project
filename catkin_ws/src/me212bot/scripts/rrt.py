@@ -13,7 +13,7 @@ class RRT():
     Class for RRT Planning
     """
 
-    def __init__(self, start, goal, obstacleList,randArea,expandDis=.05,goalSampleRate=5,maxIter=500):
+    def __init__(self, start, goal, obstacleList,randArea,expandDis=.03,goalSampleRate=5,maxIter=500):
         """
         Setting Parameter
 

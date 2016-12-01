@@ -22,7 +22,7 @@ import time
 
 to_arm1 = rospy.Publisher("/joint_position1", std_msgs.msg.Float64, queue_size = 1)
 to_arm2 = rospy.Publisher("/joint_position2", std_msgs.msg.Float64, queue_size = 1)
-hand_state_pub = rospy.Publisher("hand_state",std_msgs.msg.Float64,queue_size=1)
+hand_state_pub = rospy.Publisher("hand_state",std_msgs.msg.String,queue_size=1)
 
 # This list will have the specific waypoints we want to track, so
 # all 10 tags dont need to be on this list.
@@ -31,8 +31,8 @@ targets = [[.075,0.86],[1.29,2.40], [0.31,2.19],[2.44,2.0],[2.44,2.2],[1.83, 1.2
 target_id = [0,4,3,5,9,5,8,5]
 
 
-fixedObstacles = [(1.07,.508,.12),(.8128,.7112,.12)] # define fixed obstacles defines (x,y,radius) (radius is .12 meters for small boxes)
-obstacle_list = [fixedObstacles[0],fixedObstacles[1],(.74,1.21,.12),(.9,1.21,.12),(1.05,1.21,.12)]#[],[]] # First two obstacles 
+fixedObstacles = [(1.07,.508,.17),(.8128,.7112,.17)] # define fixed obstacles defines (x,y,radius) (radius is .12 meters for small boxes)
+obstacle_list = [fixedObstacles[0],fixedObstacles[1],(.74,1.21,.17),(.9,1.21,.17),(1.05,1.21,.17)]#[],[]] # First two obstacles 
 
 tmp = 0
 
@@ -48,7 +48,7 @@ def Goal_test(robot_pose2d,tag_pose2d):
     
 
 def generateWheelVel(robot_pose3d,target_pose):
-    v = 0.005 #const
+    v = 0.003 #const
     r = 0.01 #radius of wheel
     
     delta_x = target_pose[0]-robot_pose3d[0]
@@ -60,25 +60,28 @@ def generateWheelVel(robot_pose3d,target_pose):
         return (v/(2*r), v/(2*r))
         
     elif (np.sign(theta_diff) == 1):
-        if abs(theta_diff) < 0.25:
+        if abs(theta_diff) < 0.22:
             return (v/(8*r), -v/(8*r))
         else:
             return (v/(4*r), -v/(4*r))
         
     else:
-        if abs(theta_diff) < 0.25:
+        if abs(theta_diff) < 0.22:
             return (-v/(8*r), v/(8*r))
         else:
             return (-v/(4*r), v/(4*r))
 
 def hand_transition(next_state):
     if next_state == "open_hand":
-        val = 1000
+        val = str(1750)
+    
+    elif next_state == "pikachu":
+        val = str(1400)
     else:
-        val = 212
+        val = str(1000)
     print "Publishing... ", val
     hand_state_pub.publish(val)
-
+    rospy.sleep(2)
 
 
 class ApriltagNavigator():
@@ -201,8 +204,8 @@ class ApriltagNavigator():
     
     
     def check_obstacles(self):
-        po1 = [(.08,1.47,.12),(.23,1.47,.12),(.381,1.47,.12)]
-        po2 = [(.74,1.21,.12),(.9,1.21,.12),(1.05,1.21,.12)]
+        po1 = [(.08,1.47,.17),(.23,1.47,.17),(.381,1.47,.17)]
+        po2 = [(.74,1.21,.12),(.9,1.21,.17),(1.05,1.21,.17)]
         print self.contours
         rel = self.contours
         tmp = 1
@@ -232,10 +235,10 @@ class ApriltagNavigator():
             print "Left: ", wv.desiredWV_L, "Right: ", wv.desiredWV_R
             self.velcmd_pub.publish(wv)
  
-        hand_transition("close_hand")
-        rospy.sleep(1)
+        ##hand_transition("close_hand")
+        ##rospy.sleep(8)
         hand_transition("open_hand")
-        
+        rospy.sleep(2)
         # Loop Start
         while not rospy.is_shutdown() :
 
@@ -251,30 +254,40 @@ class ApriltagNavigator():
                 if len(targets) == 8:
                     # Grab tin
                     # grab_pidgey(robot_pose2d)
-                    
                     hand_transition("close_hand")
-                    
-                
-                elif len(targets) == 7:
+                    wv = WheelVelCmd()
+                    wv.desiredWV_L, wv.desiredWV_R = -0.1,-0.1
+                    self.velcmd_pub.publish(wv)            
+                    rospy.sleep(5)
+                     
+                elif len(targets) == 6:
                     # Drop Tin
                     hand_transition("open_hand")
                     
-                elif len(targets) == 4:
+                elif len(targets) == 5:
                     hand_transition("close_hand")
-                
+                    wv = WheelVelCmd()
+                    wv.desiredWV_L, wv.desiredWV_R = -0.1,-0.1
+                    self.velcmd_pub.publish(wv)            
+                    rospy.sleep(5)
+                     
                 elif len(targets) == 3:
                     hand_transition("open_hand")
                     
                 elif len(targets) == 2:
-                    hand_transition("close_hand") 
-                
+                    hand_transition("pikachu") 
+                    wv = WheelVelCmd()
+                    wv.desiredWV_L, wv.desiredWV_R = -0.1,-0.1
+                    self.velcmd_pub.publish(wv)            
+                    rospy.sleep(5)
+                     
                 elif len(targets) == 1:
                     hand_transition("open_hand")
             
             self.check_obstacles()
             
             # Generate New Plan
-            if (not is_plan) or ((.08,1.47,.12) in obstacle_list) and (tmp==0):
+            if (not is_plan) or ((.08,1.47,.17) in obstacle_list) and (tmp==0):
                 smoothedPath, is_plan = self.replan(robot_position2d,targets[0],obstacle_list)
         
             # Waypoint Follow

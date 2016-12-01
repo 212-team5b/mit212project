@@ -94,8 +94,7 @@ def rosHSVProcessCallBack(msg):
         print(e)
         
     contours, mask_image = HSVObjectDetection(cv_image)
-    print len(contours)
-    
+    print(len(contours))
     #for cnt in contours:
         ## Find a bounding box of detected region
         ##  xp, yp are the coordinate of the top left corner of the bounding rectangle
