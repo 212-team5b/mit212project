@@ -173,7 +173,6 @@ script "run-navigate-task1" {
     start cmd "3.1-apriltag_tf";
     wait ms 1000;
     start cmd "2-rviz";
-    start cmd "3-tf";
     start cmd "3.4-kinect";
     start cmd "3.2-apriltags";
     start cmd "5-robot";

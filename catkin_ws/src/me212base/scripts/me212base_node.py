@@ -14,9 +14,13 @@ import sys
 
 from visualization_msgs.msg import Marker
 from me212base.msg import WheelVelCmd
-from geometry_msgs.msg import Point, Pose, Twist
+from geometry_msgs.msg import Point, Pose, Twist, Quaternion
 
 port = '/dev/ttyACM0'
+
+
+odm_pub = rospy.Publisher('odometry', Pose, queue_size=1) 
+
 
 class Arduino():
     def __init__(self, port = '/dev/ttyACM0'):
@@ -54,12 +58,24 @@ class Arduino():
                     
                 self.prevtime = rospy.Time.now()
                 
+                
+                # publish odometry as Pose msg
+                odom = Pose()
+                odom.position.x = x + 0.635
+                odom.position.y = y + 0.22
+                odom.position.z = theta
+                #qtuple = tf.quaternion_from_euler(0, 0, theta)
+                #odom.orientation = Quaternion(qtuple[0], qtuple[1], qtuple[2], qtuple[3])
+                odm_pub.publish(odom) 
+                    
             except:
                 # print out msg if there is an error parsing a serial msg
                 print 'Cannot parse', splitData
                 ex_type, ex, tb = sys.exc_info()
                 traceback.print_tb(tb)
 
+                
+            
 
 def main():
     rospy.init_node('me212base_node', anonymous=True)

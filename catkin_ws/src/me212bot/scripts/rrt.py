@@ -105,6 +105,7 @@ class RRT():
         plt.pause(0.01)
 
     def PlotCircle(self,x,y,size):
+        import matplotlib.pyplot as plt
         deg=range(0,360,5)
         deg.append(0)
         xl=[x+size*math.cos(math.radians(d)) for d in deg]
@@ -206,7 +207,7 @@ def LineCollisionCheck(first, second, obstacleList):
 
 def PathSmoothing(path, maxIter, obstacleList):
     #  print("PathSmoothing")
-
+    import matplotlib.pyplot as plt
     l = GetPathLength(path)
     s = 0
     for i in range(maxIter):
@@ -254,8 +255,8 @@ def path_create(start,goal,obstacleList, randArea):
     path=rrt.Planning(animation=False)
 
     # Draw final path
-    rrt.DrawGraph()
-    plt.plot([x for (x,y) in path], [y for (x,y) in path],'-r')
+    #rrt.DrawGraph()
+    #plt.plot([x for (x,y) in path], [y for (x,y) in path],'-r')
     #Path smoothing
     maxIter=1000
     smoothedPath = PathSmoothing(path, maxIter, obstacleList)

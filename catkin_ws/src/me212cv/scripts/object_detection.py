@@ -102,7 +102,6 @@ def rosHSVProcessCallBack(msg):
         xp,yp,w,h = cv2.boundingRect(cnt)  
         
         # Set the object to 2 meters away from camera
-        # we should probably use the depth sensor here?
         zc = 2    
         
         # Draw the bounding rectangle
@@ -113,7 +112,6 @@ def rosHSVProcessCallBack(msg):
         obstacle = [X1,X2,X3,X4]
         print "Obstacle: ", obstacle
         obs_pub.publish(data=str(obstacle)) 
-        # should the publisher be inside or outside of the contour loop? 
     
 
 # Task 2 object detection code
@@ -144,7 +142,7 @@ def HSVObjectDetection(cv_image, toPrint = True):
     if toPrint:
         print 'hsv', hsv_image[240][320] # the center point hsv
         
-    showImageInCVWindow(cv_image, mask_eroded, mask_eroded_dilated)
+    # showImageInCVWindow(cv_image, mask_eroded, mask_eroded_dilated)
     image,contours,hierarchy = cv2.findContours(mask_eroded_dilated,cv2.RETR_LIST,cv2.CHAIN_APPROX_SIMPLE)
     return contours, mask_eroded_dilated
 
