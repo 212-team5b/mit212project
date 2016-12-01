@@ -1,25 +1,25 @@
-pan_controller:
+x_controller:
     controller:
         package: dynamixel_controllers
         module: joint_position_controller
         type: JointPositionController
-    joint_name: pan_joint
+    joint_name: translate_joint
     joint_speed: 2.0
     motor:
-        id: 5
+        id: 28
         init: 512
         min: 0
         max: 1023
 
-tilt_controller:
+theta_controller:
     controller:
         package: dynamixel_controllers
         module: joint_position_controller
         type: JointPositionController
-    joint_name: tilt_joint
+    joint_name: rotate_joint
     joint_speed: 2.0
     motor:
-        id: 6
+        id: 16
         init: 512
         min: 0
         max: 1023

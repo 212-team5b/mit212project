@@ -9,11 +9,25 @@ import numpy as np
 
 rospy.init_node("run_planning")
 
-exec_joint1_pub = rospy.Publisher('/joint1_controller/command', std_msgs.msg.Float64, queue_size=1)
-exec_joint2_pub = rospy.Publisher('/joint2_controller/command', std_msgs.msg.Float64, queue_size=1)
-exec_joint_pub = rospy.Publisher('/virtual_joint_states', sensor_msgs.msg.JointState, queue_size=10)
+from_task1_1 = rospy.Subscriber("/joint_position1", std_msgs.msg.Float64, queue_size = 1)
+from_task1_2 = rospy.Subscriber("/joint_position2", std_msgs.msg.Float64, queue_size = 1)
+
+
+
+#exec_joint_pub = rospy.Publisher('/virtual_joint_states', sensor_msgs.msg.JointState, queue_size=10)
+
+
 
 use_real_arm = rospy.get_param('/real_arm', False)
+
+def joint_position1_callback(data):
+    exec_joint1_pub = rospy.Publisher('/joint1_controller/command', std_msgs.msg.Float64, queue_size=1)    
+    exec_joint1_pub.publish(data)
+
+def joint_position2_callback(data):
+    exec_joint2_pub = rospy.Publisher('/joint2_controller/command', std_msgs.msg.Float64, queue_size=1)
+    exec_joint2_pub.publish(data)
+
 
 if __name__=="__main__":
     radius = 0.05          # (meter)

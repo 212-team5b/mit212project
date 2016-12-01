@@ -9,7 +9,7 @@
           args="--manager=dxl_manager
                 --port=pan_tilt_port
                 --type=simple
-                pan_controller
-                tilt_controller"
+                translate_controller
+                rotate_controller"
           output="screen"/>
 </launch>

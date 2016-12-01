@@ -64,7 +64,7 @@
 <joint name="joint2" type="revolute">
     <parent link="link1"/>
     <child link="link2"/>
-    <origin xyz="0 0 ${link1_length}" />
+    <origin xyz="0 ${link1_length} 0" />
     <limit effort="300" lower="${-M_PI}" upper="${M_PI}" velocity="7.33"/>
     <axis xyz="0 -1 0"/>
 </joint>

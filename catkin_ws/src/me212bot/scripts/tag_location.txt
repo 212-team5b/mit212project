@@ -10,3 +10,35 @@
         # "tag8" args="3.04 0.46 0.55 3.1415926 0 1.57079633 map apriltag8 100" />
         # "tag9" args="1.83 0.46 0.55 3.1415926 0 1.57079633 map apriltag9 100" />
         # "tag10"args="1.60 0.26 0.55 -1.57079633 0 1.57079633 map apriltag10 100" />
+
+
+#            print "En Route"
+            #end = time.time()
+            #delta_t = end - start
+            #delta_v = path[2]
+            
+            ##print "delta_t: ", delta_t
+            ##print "delta_v: ", delta_v
+
+            #length_dv = distance(delta_v[1], delta_v[0])
+            #delta_l = length_dv
+            
+            ##print "delta_l: ", delta_l
+            
+            #print "Distance Traveled: ", v*delta_t
+            #print "Unit Length: ", delta_l
+            #index = np.floor((v*delta_t)/delta_l)
+            #print "Current Index: ", (v*delta_t)/delta_l
+            #k = curvature[index]
+            
+            ##if k == None: 
+            ##    wv.desiredWV_L = 0
+            ##    wv.desiredWV_R = 0
+            ##    self.velcmd_pub.publish(wv)
+                
+            ##else:
+            #wv.desiredWV_L =(v/r)*(1-(k/b))/10 # just devided by a arbitrary constant (clipping to .75 gave to many extremes)
+            #wv.desiredWV_R = (v/r)*(1+(k/b))/10           
+            ##wv.desiredWV_L = max(-0.75,min(0.75,(v/r)*(1-(k/b))))
+            ##wv.desiredWV_R = max(-0.75,min(0.75,(v/r)*(1+(k/b))))
+         

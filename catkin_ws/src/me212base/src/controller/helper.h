@@ -102,6 +102,7 @@ class SerialComm {
             }
             desiredWV_R = command[0];
             desiredWV_L = command[1];
+//            hand_state  = command[2];
         }
     }
     void send(const RobotPose& robotPose) {

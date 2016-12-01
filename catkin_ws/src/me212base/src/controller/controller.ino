@@ -6,7 +6,9 @@
 
 #include "Arduino.h"
 #include "helper.h"
+#include "Servo.h"
 
+//Servo myServo;
 EncoderMeasurement  encoder(26);      // encoder handler class, set the motor type 53 or 26 here
 RobotPose           robotPose;        // robot position and orientation calculation class
 PIController        wheelVelCtrl;     // velocity PI controller class
@@ -15,8 +17,12 @@ unsigned long       prevTime = 0;
 
 boolean usePathPlanner = true;
 
+//int val;    // variable to read the value from the analog pin
+
+
 void setup() {
     Serial.begin(115200);       // initialize Serial Communication
+    //myservo.attach(9);
     encoder.init();  // connect with encoder
     wheelVelCtrl.init();        // connect with motor
     delay(1e3);                 // delay 1000 ms so the robot doesn't drive off without you
@@ -44,6 +50,11 @@ void loop() {
 
         prevTime = currentTime; // update time
     } 
+
+    //val = serialComm.hand_state;            // reads the value of the potentiometer (value between 0 and 1023)
+    //val = map(val, 0, 1023, 0, 180);     // scale it to use it with the servo (value between 0 and 180)
+    //myservo.write(val);                  // sets the servo position according to the scaled value
+    //delay(15);                           // waits for the servo to get there
 }
 
 

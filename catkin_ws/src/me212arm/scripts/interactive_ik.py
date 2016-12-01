@@ -98,7 +98,8 @@ if __name__=="__main__":
     
     # create an interactive marker for TargetPose
     pose_link2 = [0, 0, 0.235, 0, 0, 0, 1]
-    pose_arm_base = transformPose(lr, pose_link2, 'link2', 'arm_base')
+    pose_arm_base = transformPose(lr,pose_link2, 'link2', 'arm_base')
+    print pose_arm_base
     
     pose_arm_base[3] = 0
     pose_arm_base[4] = 0

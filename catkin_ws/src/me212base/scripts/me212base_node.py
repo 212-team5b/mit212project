@@ -15,6 +15,7 @@ import sys
 from visualization_msgs.msg import Marker
 from me212base.msg import WheelVelCmd
 from geometry_msgs.msg import Point, Pose, Twist, Quaternion
+import std_msgs.msg
 
 port = '/dev/ttyACM0'
 
@@ -34,11 +35,13 @@ class Arduino():
         self.prevtime = rospy.Time.now()
         
         self.velcmd_sub = rospy.Subscriber("cmdvel", WheelVelCmd, self.cmdvel)
-        
+        #self.hand_state_sub = rospyl.Subscriber("hand_state", std_msgs.msg., self.hand_state)
 
     def cmdvel(self, msg):  
         self.comm.write("%f,%f\n" % (msg.desiredWV_R, msg.desiredWV_L))
     
+    #def hand_state(self,msg):
+        
     # loop() is for reading odometry from Arduino and publish to rostopic.
     def loop(self):
         while not rospy.is_shutdown():
